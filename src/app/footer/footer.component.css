@@ -1,0 +1,7 @@
+footer {
+  margin-top: 50px; /* Espaço adicional no topo, se necessário */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Adiciona um sublinhado ao link ao passar o mouse */
+}

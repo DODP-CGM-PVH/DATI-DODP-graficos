@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+  .w3-hide-small {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .navbar-custom .navbar-collapse {
+    justify-content: center;
+  }
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+}
+
+.navbar-centered .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-centered .navbar-nav > li {
+  float: none;
+  display: inline-block;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
