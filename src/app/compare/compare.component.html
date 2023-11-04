@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <div class="row mb-5" *ngFor="let comparison of comparisons; let i = index">
+    <div class="col-12">
+      <h2>{{ comparison.title }}</h2>
+      <!-- Adiciona outra iteração aqui para as perguntas -->
+      <div *ngFor="let question of comparison.dataSets; let k = index">
+        <h3>{{ question.text }}</h3>
+        <div class="col-6 d-flex justify-content-center">
+          <canvas [id]="'compareChart-' + i + '-' + k"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

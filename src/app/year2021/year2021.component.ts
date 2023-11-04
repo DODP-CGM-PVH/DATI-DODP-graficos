@@ -1,9 +1,8 @@
 import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
 import Chart from 'chart.js/auto';
-interface Question {
-  text: string;
-  dataValues: number[]
-}
+import {Question} from "../interfaces/questionInterface";
+import {ChartDataService} from "../chart-data.service";
+
 
 @Component({
   selector: 'app-year2021',
@@ -12,16 +11,17 @@ interface Question {
 })
 export class Year2021Component implements OnInit, AfterViewInit {
 
-  questions: Question[] = [
-    {
-      text: '1 - A nomeação para a gerência da Divisão de Controle...',
-      dataValues: [16, 1, 1]
-    },
-    { text: '2 - O quantitativo de servidores...',
-      dataValues: [16, 1, 1]
-    },
-    // ... Adicione todas as 53 perguntas aqui
-  ];
+  questions: Question[] = [];
+
+  constructor(private chartDataService: ChartDataService, private el: ElementRef) { }
+
+  ngOnInit(): void {
+    this.questions = this.chartDataService.getQuestions('2021');
+  }
+
+  ngAfterViewInit(): void {
+    this.loadCharts();
+  }
 
   readonly DEFAULT_LABELS: string[] = [
     "Atende em sua totalidade",
@@ -31,17 +31,10 @@ export class Year2021Component implements OnInit, AfterViewInit {
   readonly DEFAULT_VALUES: number[] = [50, 50];
   readonly DEFAULT_COLORS: string[] = ["blue", "red", "yellow"];
 
-  constructor(private el: ElementRef) { }
-
-  ngOnInit(): void { }
-
-  ngAfterViewInit(): void {
-    this.loadCharts();
-  }
 
   loadCharts(): void {
     this.questions.forEach((question: Question, index: number):void => {
-      this.createPieChart('pizzaChart2021-' + (index + 1), this.DEFAULT_LABELS, question.dataValues, this.DEFAULT_COLORS);  // Modifique esta linha
+      this.createPieChart('pizzaChart2021-' + (index + 1), this.DEFAULT_LABELS, question.dataValues, this.DEFAULT_COLORS);
     });
   }
 

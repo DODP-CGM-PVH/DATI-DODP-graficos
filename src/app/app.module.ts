@@ -11,6 +11,7 @@ import { Year2022Component } from './year2022/year2022.component';
 import { Year2023Component } from './year2023/year2023.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CompareComponent } from './compare/compare.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
     Year2022Component,
     Year2023Component,
     FooterComponent,
+    CompareComponent,
 
   ],
   imports: [

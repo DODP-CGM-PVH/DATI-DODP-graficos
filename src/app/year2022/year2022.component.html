@@ -1,1 +1,10 @@
-<p>year2022 works!</p>
+<div class="container mt-5">
+  <div class="row mb-5" *ngFor="let question of questions; let i = index">
+    <div class="col-12">
+      <p>{{ question.text }}</p>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <canvas [id]="'pizzaChart2022-' + (i + 1)"></canvas>
+    </div>
+  </div>
+</div>
