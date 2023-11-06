@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './router/app-routing.module';
 import { Year2021Component } from './pages/year2021/year2021.component';
 import { Year2022Component } from './pages/year2022/year2022.component';
 import { Year2023Component } from './pages/year2023/year2023.component';

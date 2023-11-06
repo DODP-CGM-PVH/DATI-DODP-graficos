@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
+import {Question} from "../interfaces/questionInterface";
 
-export interface Question {
-  text: string;
-  dataValues: number[];
-}
 
 @Injectable({
   providedIn: 'root'

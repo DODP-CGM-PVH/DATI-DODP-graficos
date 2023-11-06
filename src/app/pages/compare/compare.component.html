@@ -6,7 +6,7 @@
       <h3>{{ comparisons[0].dataSets[i].text }}</h3>
     </div>
     <!-- Para cada ano, renderize os dados da pergunta correspondente lado a lado -->
-    <div *ngFor="let comparison of comparisons; let j = index" class="col">
+    <div *ngFor="let comparison of comparisons; let j = index" class="row">
       <h2>{{ comparison.title }}</h2>
       <canvas [id]="'compareChart-' + i + '-' + j"></canvas>
     </div>
