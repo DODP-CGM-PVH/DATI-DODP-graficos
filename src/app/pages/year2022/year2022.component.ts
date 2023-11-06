@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
 import Chart from "chart.js/auto";
-import {Question} from "../interfaces/questionInterface";
-import {ChartDataService} from "../chart-data.service";
+import {Question} from "../../interfaces/questionInterface";
+import {ChartDataService} from "../../services/chart-data.service";
 
 
 @Component({

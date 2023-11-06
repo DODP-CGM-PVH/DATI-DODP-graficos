@@ -1,7 +1,7 @@
 import {Component, ElementRef, AfterViewInit, OnInit} from '@angular/core';
 import Chart from 'chart.js/auto';
-import {ChartDataService, Question} from "../chart-data.service";
-import {Comparison} from "../interfaces/compareInterface";
+import {ChartDataService, Question} from "../../services/chart-data.service";
+import {Comparison} from "../../interfaces/compareInterface";
 
 @Component({
   selector: 'app-compare',

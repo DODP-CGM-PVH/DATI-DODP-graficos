@@ -1,15 +1,14 @@
-import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
-import Chart from 'chart.js/auto';
-import {Question} from "../interfaces/questionInterface";
-import {ChartDataService} from "../chart-data.service";
-
+import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
+import Chart from "chart.js/auto";
+import {Question} from "../../interfaces/questionInterface";
+import {ChartDataService} from "../../services/chart-data.service";
 
 @Component({
-  selector: 'app-year2021',
-  templateUrl: './year2021.component.html',
-  styleUrls: ['./year2021.component.css']
+  selector: 'app-year2023',
+  templateUrl: './year2023.component.html',
+  styleUrls: ['./year2023.component.css']
 })
-export class Year2021Component implements OnInit, AfterViewInit {
+export class Year2023Component implements OnInit, AfterViewInit {
 
   questions: Question[] = [];
 
@@ -31,10 +30,9 @@ export class Year2021Component implements OnInit, AfterViewInit {
   readonly DEFAULT_VALUES: number[] = [50, 50];
   readonly DEFAULT_COLORS: string[] = ["blue", "red", "yellow"];
 
-
   loadCharts(): void {
     this.questions.forEach((question: Question, index: number):void => {
-      this.createPieChart('pizzaChart2021-' + (index + 1), this.DEFAULT_LABELS, question.dataValues, this.DEFAULT_COLORS);
+      this.createPieChart('pizzaChart2023-' + (index + 1), this.DEFAULT_LABELS, question.dataValues, this.DEFAULT_COLORS);
     });
   }
 
