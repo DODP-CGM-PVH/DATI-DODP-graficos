@@ -1,14 +1,14 @@
 <div class="container mt-5">
-  <div class="row mb-5" *ngFor="let comparison of comparisons; let i = index">
+  <!-- Para cada pergunta -->
+  <div class="row mb-5" *ngFor="let questionIndex of comparisons[0].dataSets; let i = index">
+    <!-- Renderize um título da pergunta apenas uma vez -->
     <div class="col-12">
+      <h3>{{ comparisons[0].dataSets[i].text }}</h3>
+    </div>
+    <!-- Para cada ano, renderize os dados da pergunta correspondente lado a lado -->
+    <div *ngFor="let comparison of comparisons; let j = index" class="col">
       <h2>{{ comparison.title }}</h2>
-      <!-- Adiciona outra iteração aqui para as perguntas -->
-      <div *ngFor="let question of comparison.dataSets; let k = index">
-        <h3>{{ question.text }}</h3>
-        <div class="col-6 d-flex justify-content-center">
-          <canvas [id]="'compareChart-' + i + '-' + k"></canvas>
-        </div>
-      </div>
+      <canvas [id]="'compareChart-' + i + '-' + j"></canvas>
     </div>
   </div>
 </div>

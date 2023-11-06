@@ -31,14 +31,14 @@ export class CompareComponent implements AfterViewInit, OnInit {
 
   comparisons: Comparison[] = [
     {
-      title: 'Comparison 1',
+      title: 'Comparison 2021',
       dataSets: this.chartDataService.getQuestions("2021")},
     {
-      title: 'Comparison 2',
+      title: 'Comparison 2022',
       dataSets: this.chartDataService.getQuestions("2022")
     },
     {
-      title: 'Comparison 3',
+      title: 'Comparison 2023',
       dataSets: this.chartDataService.getQuestions("2023")
     },
     // ... Mais objetos de comparação
