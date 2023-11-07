@@ -19,7 +19,7 @@ export class ChartDataService {
       dataValues: [9, 4, 5],
     },
     {
-      text: '3 - O vínculo com o Município, dos servidores lotados na Divisão de Controle e Análise Processual, é preferencialmente efetivo?',
+      text: '4 - O vínculo com o Município, dos servidores lotados na Divisão de Controle e Análise Processual, é preferencialmente efetivo?',
       dataValues: [9, 4, 5],
     },
     // ... Adicione todas as 53 perguntas aqui
@@ -49,7 +49,7 @@ export class ChartDataService {
     // ... Adicione todas as 53 perguntas aqui
   ];
 
-  constructor() {}
+  constructor() { }
 
   getQuestions(year: string): Question[] {
     switch (year) {
