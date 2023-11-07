@@ -19,10 +19,48 @@ export class ChartDataService {
       dataValues: [9, 4, 5],
     },
     {
-      text: '4 - O vínculo com o Município, dos servidores lotados na Divisão de Controle e Análise Processual, é preferencialmente efetivo?',
-      dataValues: [9, 4, 5],
+      text: '4 - Os servidores lotados na Divisão de Controle e Análise Processual são designados especificamente para essa atividade em atendimento ao Princípio da Segregação de Funções?',
+      dataValues: [14, 1, 3],
     },
-    // ... Adicione todas as 53 perguntas aqui
+    {
+      text: '5 - Há nessa Secretaria, Portaria de Designação da Equipe de Controle e Análise Processual, publicada no DOM e informada ao Órgão Central de Controle Interno?',
+      dataValues: [7, 3, 8],
+    },
+    {
+      text: '6 - O servidor nomeado na Unidade Executora como Gerente da Divisão de Controle e Análise Processual tem experiência na área de controle interno?',
+      dataValues: [9, 1, 8],
+    },
+    {
+      text: '1 - A nomeação para a gerência da Divisão de Controle...',
+      dataValues: [16, 1, 1],
+    },
+    {
+      text: '1 - A nomeação para a gerência da Divisão de Controle...',
+      dataValues: [16, 1, 1],
+    },
+    {
+      text: '1 - A nomeação para a gerência da Divisão de Controle...',
+      dataValues: [16, 1, 1],
+    },
+    {
+      text: '1 - A nomeação para a gerência da Divisão de Controle...',
+      dataValues: [16, 1, 1],
+    },
+    {
+      text: '1 - A nomeação para a gerência da Divisão de Controle...',
+      dataValues: [16, 1, 1],
+    },
+    {
+      text: '1 - A nomeação para a gerência da Divisão de Controle...',
+      dataValues: [16, 1, 1],
+    },
+    {
+      text: '1 - A nomeação para a gerência da Divisão de Controle...',
+      dataValues: [16, 1, 1],
+    },
+
+
+
   ];
 
   private readonly questions2022: Question[] = [
