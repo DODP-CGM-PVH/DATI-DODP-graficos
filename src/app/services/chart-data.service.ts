@@ -31,16 +31,16 @@ export class ChartDataService {
       dataValues: [9, 1, 8],
     },
     {
-      text: '1 - A nomeação para a gerência da Divisão de Controle...',
-      dataValues: [16, 1, 1],
+      text: '7 - Qual o nível de escolaridade dos servidores lotados nessa Unidade Executora de Controle Interno - Divisão de Controle e Análise Processual?',
+      dataValues: [6, 1, 1, 6, 2, 2],
     },
     {
-      text: '1 - A nomeação para a gerência da Divisão de Controle...',
-      dataValues: [16, 1, 1],
+      text: '8 -  Os treinamentos oferecidos aos servidores da Unidade Executora de Controle Interno - Divisão de Controle e Análise Processual atende anecessidade para o desempenho das funções afetas ao controle interno?',
+      dataValues: [4, 3, 11],
     },
     {
-      text: '1 - A nomeação para a gerência da Divisão de Controle...',
-      dataValues: [16, 1, 1],
+      text: '9 - quantidades de computadores e mesas existentes na Divisão de Controle e Análise Processual são suficientes para atender a demanda?',
+      dataValues: [8, 1, 9],
     },
     {
       text: '1 - A nomeação para a gerência da Divisão de Controle...',
