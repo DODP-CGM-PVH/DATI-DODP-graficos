@@ -83,7 +83,7 @@ export class ChartDataService {
       dataValues: [8, 3, 6, 1],
     },
     {
-      text: ' 20 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item IV - avaliar e acompanhar a execução dos contratos, convênios ouinstrumentos congêneres, afetos a sua unidade.',
+      text: '20 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item IV - avaliar e acompanhar a execução dos contratos, convênios ouinstrumentos congêneres, afetos a sua unidade.',
       dataValues: [12, 3, 3],
     },
     {
@@ -103,7 +103,7 @@ export class ChartDataService {
       dataValues: [15, 1, 2],
     },
     {
-      text: ' 25 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos das aquisições, se estão definidas normas e procedimentos para a apuração de irregularidades, incluindodesconformidades com a Legislação e com diretrizes de governança e de gestão?',
+      text: '25 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos das aquisições, se estão definidas normas e procedimentos para a apuração de irregularidades, incluindodesconformidades com a Legislação e com diretrizes de governança e de gestão?',
       dataValues: [16, 2],
     },
     {
@@ -123,7 +123,7 @@ export class ChartDataService {
       dataValues: [17, 1],
     },
     {
-      text: ' 30 - A Divisão de Controle e Análise Processual tem verificado nos procedimentos das aquisições se constam memória de cálculo das estimativas de preços (Mínimo de três Cotações de Preços), com especificação completa do produto ou serviço, conforme disposto no Item 03 e Item 07, Anexo I, do Dec. Municipal Nº 15.403/2018?',
+      text: '30 - A Divisão de Controle e Análise Processual tem verificado nos procedimentos das aquisições se constam memória de cálculo das estimativas de preços (Mínimo de três Cotações de Preços), com especificação completa do produto ou serviço, conforme disposto no Item 03 e Item 07, Anexo I, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
@@ -155,7 +155,7 @@ export class ChartDataService {
       dataValues: [16, 2],
     },
     {
-      text: ' 38 - A Divisão de Controle e Análise Processual tem verificado a entregada nota de empenho ao fornecedor, quando for o caso, realizada pelaunidade requisitante, ordem de serviço ou de fornecimento, com data,assinatura e identificação do responsável pela empresa no verso dodocumento, conforme Item 13, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '38 - A Divisão de Controle e Análise Processual tem verificado a entregada nota de empenho ao fornecedor, quando for o caso, realizada pelaunidade requisitante, ordem de serviço ou de fornecimento, com data,assinatura e identificação do responsável pela empresa no verso dodocumento, conforme Item 13, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
@@ -163,7 +163,7 @@ export class ChartDataService {
       dataValues: [15, 1, 1, 1],
     },
     {
-      text: ' 40 - A Divisão de Controle e Análise Processual tem verificado a Publicação no D.O.M do extrato do Contrato, quando for o caso, conforme prazo estabelecido da Lei nº 8.666/1993, conforme Item 18, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '40 - A Divisão de Controle e Análise Processual tem verificado a Publicação no D.O.M do extrato do Contrato, quando for o caso, conforme prazo estabelecido da Lei nº 8.666/1993, conforme Item 18, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
@@ -171,7 +171,7 @@ export class ChartDataService {
       dataValues: [16, 2],
     },
     {
-      text: ' 42 - A Divisão de Controle e Análise Processual tem verificado NotaFiscal com preço unitário, total, data de emissão, dados da Prefeitura de Porto Velho, marca, quantidade, volume e dimensão (especificação  completa do produto ou serviço), devidamente certificada pelosservidores que efetuaram o recebimento/conferência no verso e datada, conforme Item 20, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '42 - A Divisão de Controle e Análise Processual tem verificado NotaFiscal com preço unitário, total, data de emissão, dados da Prefeitura de Porto Velho, marca, quantidade, volume e dimensão (especificação  completa do produto ou serviço), devidamente certificada pelosservidores que efetuaram o recebimento/conferência no verso e datada, conforme Item 20, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
@@ -187,11 +187,11 @@ export class ChartDataService {
       dataValues: [18],
     },
     {
-      text: ' 46 - A Divisão de Controle e Análise Processual tem verificado Cópias do edital original, e não da minuta, e da respectiva Ata de Registro de Preço Publicada, demonstrando sua vigência e previsão de adesão à ata com a possibilidade da ''Carona'', consignando, se possível, o número de adesões a serem recepcionadas pelo gerenciador, conforme Item 05, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
+      text: '46 - A Divisão de Controle e Análise Processual tem verificado Cópias do edital original, e não da minuta, e da respectiva Ata de Registro de Preço Publicada, demonstrando sua vigência e previsão de adesão à ata com a possibilidade da ''Carona'', consignando, se possível, o número de adesões a serem recepcionadas pelo gerenciador, conforme Item 05, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [15, 1, 1, 1],
     },
     {
-      text: ' 47 - A Divisão de Controle e Análise Processual tem verificado o Ofício solicitando a adesão ao órgão gerenciador e ao fornecedor que possui preço registrado na Ata. OBS.: Se a Ata for externa, tem que prever a população, conforme parecer prévio 07/2014 (DOE TCE-RO 691, de 16 de junho de 2014, conforme Item 07, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
+      text: '47 - A Divisão de Controle e Análise Processual tem verificado o Ofício solicitando a adesão ao órgão gerenciador e ao fornecedor que possui preço registrado na Ata. OBS.: Se a Ata for externa, tem que prever a população, conforme parecer prévio 07/2014 (DOE TCE-RO 691, de 16 de junho de 2014, conforme Item 07, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
@@ -199,11 +199,11 @@ export class ChartDataService {
       dataValues: [17, 1],
     },
     {
-      text: ' 49 - A Divisão de Controle e Análise Processual tem verificado a Documentação relativa à habilitação jurídica da empresa fornecedora da Ata de Registro de Preço, sendo registro comercial no caso de empresaindividual ou contrato social ou ato constitutivo no caso de sociedades comerciais, objetivando comprovar que ela é do ramo de atividade do objeto da despesa - (Art. 34 da Lei Federal nº 8.666/93), conforme Item 11, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
+      text: '49 - A Divisão de Controle e Análise Processual tem verificado a Documentação relativa à habilitação jurídica da empresa fornecedora da Ata de Registro de Preço, sendo registro comercial no caso de empresaindividual ou contrato social ou ato constitutivo no caso de sociedades comerciais, objetivando comprovar que ela é do ramo de atividade do objeto da despesa - (Art. 34 da Lei Federal nº 8.666/93), conforme Item 11, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [15, 1, 1, 1],
     },
     {
-      text: ' 50 - A Divisão de Controle e Análise Processual tem verificado a Justificativa da Vantajosidade e Economicidade da Adesão à Ata de Registro de Preços assinada pelo ordenador de despesa, Anexo XXVIII deste Decreto, conforme Item 18, Anexo IV, do Dec. Municipal Nº15.403/2018?',
+      text: '50 - A Divisão de Controle e Análise Processual tem verificado a Justificativa da Vantajosidade e Economicidade da Adesão à Ata de Registro de Preços assinada pelo ordenador de despesa, Anexo XXVIII deste Decreto, conforme Item 18, Anexo IV, do Dec. Municipal Nº15.403/2018?',
       dataValues: [18],
     },
     {
@@ -211,11 +211,11 @@ export class ChartDataService {
       dataValues: [18],
     },
     {
-      text: ' 52 - A Divisão de Controle e Análise Processual tem verificado a Publicação no DOM do Termo de Adesão a Ata de Registro de Preço (Carona) expedido pela unidade requisitante, conforme Item 22, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
+      text: '52 - A Divisão de Controle e Análise Processual tem verificado a Publicação no DOM do Termo de Adesão a Ata de Registro de Preço (Carona) expedido pela unidade requisitante, conforme Item 22, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
-      text: ' 53 - A Divisão de Controle e Análise Processual tem verificado se as aquisições dos processos administrativos por meio de Pregão Presencial, constam justificativas da inviabilidade da utilização da forma  eletrônica, conforme Artigo 4º, § 1º do Decreto Federal nº 5.450/05?',
+      text: '53 - A Divisão de Controle e Análise Processual tem verificado se as aquisições dos processos administrativos por meio de Pregão Presencial, constam justificativas da inviabilidade da utilização da forma  eletrônica, conforme Artigo 4º, § 1º do Decreto Federal nº 5.450/05?',
       dataValues: [15, 1, 1, 1],
     },
   ];
