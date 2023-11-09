@@ -222,15 +222,15 @@ export class ChartDataService {
 
   private readonly questions2022: Question[] = [
     {
-      text: ' 1 - A nomeação para a gerência da Divisão de Controle e Análise Processual da sua Secretaria já está definida e publicada no DOM?',
-      dataValues: [17, 1],
+      text: '1 - A nomeação para a gerência da Divisão de Controle e Análise Processual da sua Secretaria já está definida e publicada no DOM?',
+      dataValues: [16, 1, 1],
     },
     {
-      text: '  2 - O quantitativo de servidores lotados na Divisão de Controle e Análise Processual de sua Secretaria atende à demanda existente?',
+      text: '2 - O quantitativo de servidores lotados na Divisão de Controle e Análise Processual de sua Secretaria atende à demanda existente?',
       dataValues: [7, 1, 10],
     },
     {
-      text: '  3 - O vínculo com o Município, dos servidores lotados na Divisão de Controle e Análise Processual, é preferencialmente efetivo?',
+      text: '3 - O vínculo com o Município, dos servidores lotados na Divisão de Controle e Análise Processual, é preferencialmente efetivo?',
       dataValues: [5, 1, 12]
     },
     {
@@ -246,23 +246,23 @@ export class ChartDataService {
       dataValues: [9, 1, 8],
     },
     {
-      text: ' 7 - Qual o nível de escolaridade dos servidores lotados nessa Unidade Executora de Controle Interno - Divisão de Controle e Análise  Processual?',
+      text: '7 - Qual o nível de escolaridade dos servidores lotados nessa Unidade Executora de Controle Interno - Divisão de Controle e Análise  Processual?',
       dataValues: [13, 3, 1, 1],
     },
     {
-      text: ' 8 - Os treinamentos oferecidos aos servidores da Unidade Executora de Controle Interno - Divisão de Controle e Análise Processual atende a necessidade para o desempenho das funções afetas ao controle interno?',
+      text: '8 - Os treinamentos oferecidos aos servidores da Unidade Executora de Controle Interno - Divisão de Controle e Análise Processual atende a necessidade para o desempenho das funções afetas ao controle interno?',
       dataValues: [1, 4, 13],
     },
     {
-      text: ' 9 - Quanto à estrutura física, atende a Divisão de Controle e Análise Processual com espaço adequado e suficiente para o desempenho das atividades da Divisão?',
+      text: '9 - Quanto à estrutura física, atende a Divisão de Controle e Análise Processual com espaço adequado e suficiente para o desempenho das atividades da Divisão?',
       dataValues: [9, 5, 4],
     },
     {
-      text: '  10 - As quantidades de computadores e mesas existentes na Divisão de Controle e Análise Processual são suficientes para atender a demanda?',
+      text: '10 - As quantidades de computadores e mesas existentes na Divisão de Controle e Análise Processual são suficientes para atender a demanda?',
       dataValues: [16, 2],
     },
     {
-      text: ' 11 - As quantidades de impressoras existentes na Divisão de Controle e Análise Processual atendem a necessidade da equipe?',
+      text: '11 - As quantidades de impressoras existentes na Divisão de Controle e Análise Processual atendem a necessidade da equipe?',
       dataValues: [18],
     },
     {
@@ -270,11 +270,11 @@ export class ChartDataService {
       dataValues: [18],
     },
     {
-      text: ' 13 - A Divisão de Controle e Análise Processual possui sistema informatizado próprio e vinculado aos demais sistemas do Poder Executivo para efetuar os registros dos trabalhos afeto ao Controle Interno?',
+      text: '13 - A Divisão de Controle e Análise Processual possui sistema informatizado próprio e vinculado aos demais sistemas do Poder Executivo para efetuar os registros dos trabalhos afeto ao Controle Interno?',
       dataValues: [7, 6, 5],
     },
     {
-      text: '  14 - O Município possui Normas do Poder Executivo que regulamenta a criação da Unidade Executora de Controle (Divisão de Controle e Análise Processual), nesta Secretaria?',
+      text: '14 - O Município possui Normas do Poder Executivo que regulamenta a criação da Unidade Executora de Controle (Divisão de Controle e Análise Processual), nesta Secretaria?',
       dataValues: [17, 1],
     },
     {
@@ -286,7 +286,7 @@ export class ChartDataService {
       dataValues: [14, 2, 2],
     },
     {
-      text: '  17 - A Divisão de Controle e Análise Processual emite relatório(mensal/anual) acerca dos trabalhos realizados pela Unidade?',
+      text: '17 - A Divisão de Controle e Análise Processual emite relatório(mensal/anual) acerca dos trabalhos realizados pela Unidade?',
       dataValues: [6, 6, 6],
     },
     {
@@ -298,24 +298,24 @@ export class ChartDataService {
       dataValues: [17, 1],
     },
     {
-      text: '  20 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item II - exercer o acompanhamento visando o controle sobre a execução do seu Orçamento Anual visando ocumprimento dos objetivos e metas inerentes à sua área de atuaçãodefinida no Plano Plurianual e na Lei de Diretrizes Orçamentária.',
+      text: '20 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item II - exercer o acompanhamento visando o controle sobre a execução do seu Orçamento Anual visando ocumprimento dos objetivos e metas inerentes à sua área de atuaçãodefinida no Plano Plurianual e na Lei de Diretrizes Orçamentária.',
       dataValues: [3, 12, 3],
     },
     {
-      text: '  21 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item III - acompanhar o exercício docontrole sobre o uso e guarda de bens pertencente ao poder Executivo Municipal, que no exercício de suas funções sejam colocados à disposição de qualquer pessoa física ou unidade que os utilize.',
+      text: '21 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item III - acompanhar o exercício docontrole sobre o uso e guarda de bens pertencente ao poder Executivo Municipal, que no exercício de suas funções sejam colocados à disposição de qualquer pessoa física ou unidade que os utilize.',
       dataValues: [6, 9, 3],
     },
     {
-      text: ' 22 - Considerando as orientações expedidas no Ofício Circular nº033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item IV - avaliar e acompanhar aexecução dos contratos, convênios ou instrumentos congêneres, afetos a sua unidade.',
+      text: '22 - Considerando as orientações expedidas no Ofício Circular nº033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item IV - avaliar e acompanhar aexecução dos contratos, convênios ou instrumentos congêneres, afetos a sua unidade.',
       dataValues: [6, 8, 4],
     },
     {
-      text: ' 23 - Considerando as orientações expedidas no Ofício Circular nº033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item V - manter atualizada relação de responsáveis por dinheiros, valores e bens públicos, cujo rol deverá sertransmitido anualmente ao Tribunal de Contas, comunicando-se quadrimestralmente as alterações.',
+      text: '23 - Considerando as orientações expedidas no Ofício Circular nº033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item V - manter atualizada relação de responsáveis por dinheiros, valores e bens públicos, cujo rol deverá sertransmitido anualmente ao Tribunal de Contas, comunicando-se quadrimestralmente as alterações.',
       dataValues: [7, 8, 3],
     },
     {
       text: '24 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto àsatribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item VI - comunicar ao nível hierárquico superior competente o conhecimento da ocorrência de atosilegais, ilegítimos, irregulares ou antieconômico de que resultem, ou não, danos ao erário, sob pena de responsabilidade solidária.',
-      dataValues: [16, 1, 1],
+      dataValues: [11, 5, 2],
     },
     {
       text: '25 - Considerando as orientações expedidas no Ofício Circular nº033/DOP/GAB/CGM/2017, LC nº 767/19, Cap. VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item VII - propor ao Órgão Central do Sistema de Controle Interno e ao órgão central do respectivo sistema administrativo, a atualização ou a adequação dos regulamentos inerentes às suas atividades.',
@@ -326,7 +326,7 @@ export class ChartDataService {
       dataValues: [17, 1],
     },
     {
-      text: ' 27 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos de despesas a conformidade com a Legislação vigente e com a diretrizes de governança e de gestão?',
+      text: '27 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos de despesas a conformidade com a Legislação vigente e com a diretrizes de governança e de gestão?',
       dataValues: [16, 1, 1],
     },
     {
@@ -346,7 +346,7 @@ export class ChartDataService {
       dataValues: [18],
     },
     {
-      text: '  32 - A Divisão de Controle e Análise Processual tem verificado nos procedimentos das aquisições se constam memória de cálculo das estimativas de preços (Mínimo de três Cotações de Preços), com especificação completa do produto ou serviço, conforme disposto no Item  03 e Item 07, Anexo I, do Dec. Municipal Nº 15.403/2018?',
+      text: '32 - A Divisão de Controle e Análise Processual tem verificado nos procedimentos das aquisições se constam memória de cálculo das estimativas de preços (Mínimo de três Cotações de Preços), com especificação completa do produto ou serviço, conforme disposto no Item  03 e Item 07, Anexo I, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
@@ -354,31 +354,31 @@ export class ChartDataService {
       dataValues: [18],
     },
     {
-      text: ' 34 - A Divisão de Controle e Análise Processual tem verificado o Memorando expedido pelo setor demandante da Unidade Requisitante do produto/serviço, datado e assinado pelo dirigente do setor requisitante, devidamente autorizado pela autoridade competente, no qual deverá  constar a especificação do pedido de acordo com a Ata de Registro de  Preços e, a partir da mesma ata, deverá ser anexado posições de empenho impressas do Sistema Informatizado de Contabilidade referente aos gerenciamentos anteriores, conforme Item 01, Anexo III, do Dec. Municipal nº 15.403/2018?',
+      text: '34 - A Divisão de Controle e Análise Processual tem verificado o Memorando expedido pelo setor demandante da Unidade Requisitante do produto/serviço, datado e assinado pelo dirigente do setor requisitante, devidamente autorizado pela autoridade competente, no qual deverá  constar a especificação do pedido de acordo com a Ata de Registro de  Preços e, a partir da mesma ata, deverá ser anexado posições de empenho impressas do Sistema Informatizado de Contabilidade referente aos gerenciamentos anteriores, conforme Item 01, Anexo III, do Dec. Municipal nº 15.403/2018?',
       dataValues: [17, 1,],
     },
     {
-      text: ' 35 - A Divisão de Controle e Análise Processual tem verificado a autorização da despesa pelo ordenador da despesa, na Requisição de Gerenciamento de Ata de Registro de Preços (Art. 25 da Lei Complementar nº 648/2017 e alterações). Conforme Item 04, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '35 - A Divisão de Controle e Análise Processual tem verificado a autorização da despesa pelo ordenador da despesa, na Requisição de Gerenciamento de Ata de Registro de Preços (Art. 25 da Lei Complementar nº 648/2017 e alterações). Conforme Item 04, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
-      text: ' 36 - A Divisão de Controle e Análise Processual tem verificado se constam dos autos, despacho emitido pela unidade requisitante, enviando os autos à Superintendência Municipal de Gestão de Gastos Públicos, para análise do pedido e gerenciamento da ata de registro de preços, conforme  Item 06, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '36 - A Divisão de Controle e Análise Processual tem verificado se constam dos autos, despacho emitido pela unidade requisitante, enviando os autos à Superintendência Municipal de Gestão de Gastos Públicos, para análise do pedido e gerenciamento da ata de registro de preços, conforme  Item 06, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
-      text: ' 37 - A Divisão de Controle e Análise Processual tem verificado a Reserva  de Saldo Orçamentário emitida pela Secretaria Municipal de Planejamento, Orçamento e Gestão - SEMPOG, com data e assinatura, conforme Item 10, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '37 - A Divisão de Controle e Análise Processual tem verificado a Reserva  de Saldo Orçamentário emitida pela Secretaria Municipal de Planejamento, Orçamento e Gestão - SEMPOG, com data e assinatura, conforme Item 10, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
-      text: ' 38 - A Divisão de Controle e Análise Processual tem verificado a  assinatura na nota de empenho pelo servidor registrado no Sistema Informatizado e pelo ordenador de despesas da unidade requisitante, conforme Item 12, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '38 - A Divisão de Controle e Análise Processual tem verificado a  assinatura na nota de empenho pelo servidor registrado no Sistema Informatizado e pelo ordenador de despesas da unidade requisitante, conforme Item 12, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
-      text: ' 39 - A Divisão de Controle e Análise Processual tem verificado a entrega da nota de empenho ao fornecedor, quando for o caso, realizada pela unidade requisitante, ordem de serviço ou de fornecimento, com data  assinatura e identificação do responsável pela empresa no verso do documento, conforme Item 13, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '39 - A Divisão de Controle e Análise Processual tem verificado a entrega da nota de empenho ao fornecedor, quando for o caso, realizada pela unidade requisitante, ordem de serviço ou de fornecimento, com data  assinatura e identificação do responsável pela empresa no verso do documento, conforme Item 13, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
-      text: '  40 - A Divisão de Controle e Análise Processual tem verificado o Contrato emitido pela Procuradoria Geral do Município, para os casos previstos no artigo 62 da Lei Federal nº 8.666/93, observando as  cláusulas necessárias estabelecidas no art. 55 da Lei Federal nº 8.666/93, conforme Item 15, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '40 - A Divisão de Controle e Análise Processual tem verificado o Contrato emitido pela Procuradoria Geral do Município, para os casos previstos no artigo 62 da Lei Federal nº 8.666/93, observando as  cláusulas necessárias estabelecidas no art. 55 da Lei Federal nº 8.666/93, conforme Item 15, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
@@ -390,15 +390,15 @@ export class ChartDataService {
       dataValues: [18],
     },
     {
-      text: ' 43 - A Divisão de Controle e Análise Processual tem verificado Nota Fiscal com preço unitário, total, data de emissão, dados da Prefeitura de Porto Velho, marca, quantidade, volume e dimensão (especificação completa do produto ou serviço), devidamente certificad  pelos servidores que efetuaram o recebimento/conferência no verso e datada, conforme Item 20, Anexo III, do Dec. Municipal Nº 15.403/2018?',
+      text: '43 - A Divisão de Controle e Análise Processual tem verificado Nota Fiscal com preço unitário, total, data de emissão, dados da Prefeitura de Porto Velho, marca, quantidade, volume e dimensão (especificação completa do produto ou serviço), devidamente certificad  pelos servidores que efetuaram o recebimento/conferência no verso e datada, conforme Item 20, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
     },
     {
-      text: '  44 - A Divisão de Controle e Análise Processual tem verificado Certidões Negativas de débitos: INSS, FGTS, Justiça Trabalhista, Tributos Federais, Estaduais e Municipais, com validade e autenticidade  verificadas e certificadas por servidor devidamente identificado com  nome completo, número do cadastro e cargo que exerce. Atenção: conferir  os dados do fornecedor nas certidões (número da certidão, razão social, endereço, CNPJ, etc) - (Art. 28 e 29, da Lei Federal nº 8.666/93),  conforme Item 23, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
+      text: '44 - A Divisão de Controle e Análise Processual tem verificado Certidões Negativas de débitos: INSS, FGTS, Justiça Trabalhista, Tributos Federais, Estaduais e Municipais, com validade e autenticidade  verificadas e certificadas por servidor devidamente identificado com  nome completo, número do cadastro e cargo que exerce. Atenção: conferir  os dados do fornecedor nas certidões (número da certidão, razão social, endereço, CNPJ, etc) - (Art. 28 e 29, da Lei Federal nº 8.666/93),  conforme Item 23, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
-      text: '  45 - Nos processos administrativos de aquisição por adesão a Ata de Registro de Preços, há declaração explícita (Mem./Justificativa), decompatibilidade entre as especificações do objeto contratado e a necessidade da Secretaria, devidamente assinada pelo ordenador de  despesa, conforme Item 03, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
+      text: '45 - Nos processos administrativos de aquisição por adesão a Ata de Registro de Preços, há declaração explícita (Mem./Justificativa), decompatibilidade entre as especificações do objeto contratado e a necessidade da Secretaria, devidamente assinada pelo ordenador de  despesa, conforme Item 03, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
@@ -406,7 +406,7 @@ export class ChartDataService {
       dataValues: [17, 1],
     },
     {
-      text: ' 47 - A Divisão de Controle e Análise Processual tem verificado Cópias do edital original, e não da minuta, e da respectiva Ata de Registro de Preço Publicada, demonstrando sua vigência e previsão de adesão à ata com a possibilidade da ''Carona'', consignando, se possível, o número de  adesões a serem recepcionadas pelo gerenciador, conforme Item 05, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
+      text: '47 - A Divisão de Controle e Análise Processual tem verificado Cópias do edital original, e não da minuta, e da respectiva Ata de Registro de Preço Publicada, demonstrando sua vigência e previsão de adesão à ata com a possibilidade da ''Carona'', consignando, se possível, o número de  adesões a serem recepcionadas pelo gerenciador, conforme Item 05, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
@@ -418,51 +418,47 @@ export class ChartDataService {
       dataValues: [17, 1],
     },
     {
-      text: '1 - A nomeação para a gerência da Divisão de Controle e Análise Processual da sua Secretaria já está definida e publicada no DOM?',
-      dataValues: [16, 1, 1],
-    },
-    {
       text: '50 - A Divisão de Controle e Análise Processual tem verificado a Documentação relativa à habilitação jurídica da empresa fornecedora da Ata de Registro de Preço, sendo registro comercial no caso de empresa  individual ou contrato social ou ato constitutivo no caso de sociedades  comerciais, objetivando comprovar que ela é do ramo de atividade do  objeto da despesa - (Art. 34 da Lei Federal nº 8.666/93), conforme Item 11, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
-      text: ' 51 - A Divisão de Controle e Análise Processual tem verificado a Justificativa da Vantajosidade e Economicidade da Adesão à Ata de  Registro de Preços assinada pelo ordenador de despesa, Anexo XXVIII deste Decreto, conforme Item 18, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
+      text: '51 - A Divisão de Controle e Análise Processual tem verificado a Justificativa da Vantajosidade e Economicidade da Adesão à Ata de  Registro de Preços assinada pelo ordenador de despesa, Anexo XXVIII deste Decreto, conforme Item 18, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
-      text: '  52 - A Divisão de Controle e Análise Processual tem verificado o Parecer Jurídico da Procuradoria Geral do Município (Art. 38, Parágrafo único, da Lei Federal nº 8.666/93), conforme Item 21, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
+      text: '52 - A Divisão de Controle e Análise Processual tem verificado o Parecer Jurídico da Procuradoria Geral do Município (Art. 38, Parágrafo único, da Lei Federal nº 8.666/93), conforme Item 21, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
-      text: ' 53 - A Divisão de Controle e Análise Processual tem verificado a Publicação no DOM do Termo de Adesão a Ata de Registro de Preço (Carona)  expedido pela unidade requisitante, conforme Item 22, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
+      text: '53 - A Divisão de Controle e Análise Processual tem verificado a Publicação no DOM do Termo de Adesão a Ata de Registro de Preço (Carona)  expedido pela unidade requisitante, conforme Item 22, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
     },
     {
-      text: '  54 - A Divisão de Controle e Análise Processual tem verificado se as aquisições dos processos administrativos por meio de Pregão Presencial,  constam justificativas da inviabilidade da utilização da forma eletrônica, conforme Artigo 4º, § 1º do Decreto Federal nº 5.450/05?',
+      text: '54 - A Divisão de Controle e Análise Processual tem verificado se as aquisições dos processos administrativos por meio de Pregão Presencial,  constam justificativas da inviabilidade da utilização da forma eletrônica, conforme Artigo 4º, § 1º do Decreto Federal nº 5.450/05?',
       dataValues: [15, 2, 1],
     },
     {
-      text: '  55 - O Órgão/Entidade possui planejamento estratégico com Missão, Visão, Valores, Objetivos, Indicadores e Metas aprovados?',
+      text: '55 - O Órgão/Entidade possui planejamento estratégico com Missão, Visão, Valores, Objetivos, Indicadores e Metas aprovados?',
       dataValues: [10, 3, 3, 1, 1],
     },
     {
-      text: ' 56 - O Órgão/Entidade possui cadeia de valores definindo osmacroprocessos gerenciais, de apoio e finalísticos?',
-      dataValues: [16, 1, 1],
+      text: '56 - O Órgão/Entidade possui cadeia de valores definindo osmacroprocessos gerenciais, de apoio e finalísticos?',
+      dataValues: [10, 3, 3, 1, 1],
     },
     {
       text: '57 - O Órgão/Entidade instituiu comitê interno de governança com o objetivo de garantir que as boas praticas de governança se desenvolvam e sejam apropriadas pela instituição de forma contínua e progressiva, conforme Art. 14 do Decreto nº 15.261/2018?',
       dataValues: [4, 11, 2, 1],
     },
     {
-      text: ' 58 - O Órgão/Entidade designou unidade nova ou existente de gestão da integridade, à qual foi atribuída competência para coordenação da  estruturação, execução e monitoramento do Programa de Integridade; orientação e treinamento dos servidores com relação aos temas atinentes  ao Programa de Integridade; e promoção de outras ações relacionadas à implementação do Programa de Integridade, em conjunto com as demais  unidades do órgão ou entidade?',
+      text: '58 - O Órgão/Entidade designou unidade nova ou existente de gestão da integridade, à qual foi atribuída competência para coordenação da  estruturação, execução e monitoramento do Programa de Integridade; orientação e treinamento dos servidores com relação aos temas atinentes  ao Programa de Integridade; e promoção de outras ações relacionadas à implementação do Programa de Integridade, em conjunto com as demais  unidades do órgão ou entidade?',
       dataValues: [4, 9, 4, 1],
     },
     {
-      text: ' 59 - O Órgão/Entidade aprovou seu plano de integridade, contendo caracterização do órgão ou entidade; ações de estabelecimento das unidades; levantamento de riscos para a integridade e medidas para seu tratamento; e previsão sobre a forma de monitoramento e a realização de  atualização periódica do Plano de Integridade?',
+      text: '59 - O Órgão/Entidade aprovou seu plano de integridade, contendo caracterização do órgão ou entidade; ações de estabelecimento das unidades; levantamento de riscos para a integridade e medidas para seu tratamento; e previsão sobre a forma de monitoramento e a realização de  atualização periódica do Plano de Integridade?',
       dataValues: [3, 10, 4, 1],
     },
     {
-      text: ' 60 - O Órgão/Entidade estabeleceu estratégia de organização e estrutura de gerenciamento de riscos, incluindo o estabelecimento, a manutenção, o monitoramento e o aperfeiçoamento dos controles internos da gestão?',
+      text: '60 - O Órgão/Entidade estabeleceu estratégia de organização e estrutura de gerenciamento de riscos, incluindo o estabelecimento, a manutenção, o monitoramento e o aperfeiçoamento dos controles internos da gestão?',
       dataValues: [3, 10, 4, 1],
     },
     {
@@ -477,12 +473,8 @@ export class ChartDataService {
 
   private readonly questions2023: Question[] = [
     {
-      text: '16 - O Planejamento das atividades da Unidade Executora de Controle  Interno - Divisão de Controle e Análise Processual estão implantados?',
-      dataValues: [7, 9, 2],
-    },
-    {
-      text: '17 Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, bem como na LC nº 767/2019, Capítulo VI, art. 10,quanto às atribuições da Divisão de Controle e Análise Processual, asatribuições descritas estão sendo realizadas? Item I - exercer os controles estabelecidos nos regulamentos do sistema administrativo afetos a sua área de atuação, no que tange as atividades específicas ou auxiliares objetivando a observância da legislação, a salvaguarda do patrimônio e a busca da eficiência operacional: (ex. análise de processo antes do pagamento, com conferência do Check - List), conforme Dec. nº 15.403/2018.',
-      dataValues: [17, 1],
+      text: '1 - A nomeação e Análise Processual?',
+      dataValues: [16, 1, 1],
     },
     // ... Adicione todas as 53 perguntas aqui
   ];
