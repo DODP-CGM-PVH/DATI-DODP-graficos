@@ -1,6 +1,7 @@
 <div class="compare-container" *ngIf="comparisons && comparisons.length > 0">
   <div *ngFor="let question of year2021; let qIndex = index">
-    <h3>Questão {{ qIndex + 1 }}</h3>
+    <h3 class="question-title">Questão {{ qIndex + 1 }}</h3>
+    <h3 class="question-title">{{ question.text }}</h3>
     <div class="charts-row">
       <div *ngFor="let year of comparisons; let yIndex = index" class="chart-container">
         <h4>{{ year.title }}</h4>
