@@ -1,0 +1,18 @@
+.compare-container {
+  margin: 20px;
+}
+
+.charts-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 30%; /* Ajuste a largura conforme necessário */
+  text-align: center;
+}
+
+.chart-container h4 {
+  margin-bottom: 10px;
+}

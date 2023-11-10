@@ -1,14 +1,11 @@
-<div class="container mt-5">
-  <!-- Para cada pergunta -->
-  <div class="row mb-5" *ngFor="let questionIndex of comparisons[0].dataSets; let i = index">
-    <!-- Renderize um título da pergunta apenas uma vez -->
-    <div class="col-12">
-      <h3>{{ comparisons[0].dataSets[i].text }}</h3>
-    </div>
-    <!-- Para cada ano, renderize os dados da pergunta correspondente lado a lado -->
-    <div *ngFor="let comparison of comparisons; let j = index" class="row">
-      <h2>{{ comparison.title }}</h2>
-      <canvas [id]="'compareChart-' + i + '-' + j"></canvas>
+<div class="compare-container" *ngIf="comparisons && comparisons.length > 0">
+  <div *ngFor="let question of year2021; let qIndex = index">
+    <h3>Questão {{ qIndex + 1 }}</h3>
+    <div class="charts-row">
+      <div *ngFor="let year of comparisons; let yIndex = index" class="chart-container">
+        <h4>{{ year.title }}</h4>
+        <canvas id="compareChart-{{yIndex}}-{{qIndex}}"></canvas>
+      </div>
     </div>
   </div>
 </div>

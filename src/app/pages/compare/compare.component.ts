@@ -12,9 +12,8 @@ import {Question} from "../../interfaces/questionInterface";
 })
 export class CompareComponent implements AfterViewInit, OnInit {
 
-  year2021: Question[] = []
-  year2022: Question[] = []
-  year2023: Question[] = []
+  year2021: Question[] = this.chartDataService.getQuestions("2021")
+  year2022: Question[] = this.chartDataService.getQuestions("2022")
 
   readonly DEFAULT_LABELS: string[] = [
     "Atende em sua totalidade",
@@ -28,26 +27,23 @@ export class CompareComponent implements AfterViewInit, OnInit {
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
+    console.log("Comparisons:", this.comparisons);
     this.loadComparisonCharts();
   }
 
   comparisons: Comparison[] = [
     {
       title: 'Comparison 2021',
-      dataSets: this.chartDataService.getQuestions("2021")},
-    {
-      title: 'Comparison 2022',
-      dataSets: this.chartDataService.getQuestions("2022")
+      dataSets: this.year2021
     },
     {
-      title: 'Comparison 2023',
-      dataSets: this.chartDataService.getQuestions("2023")
+      title: 'Comparison 2022',
+      dataSets: this.year2022
     },
     // ... Mais objetos de comparação
   ];
 
   loadComparisonCharts(): void {
-    console.log(this.year2022)
     this.comparisons.forEach((comparison, i) => {
       comparison.dataSets.forEach((dataset, j) => {
         this.createPieChart(`compareChart-${i}-${j}`, this.DEFAULT_LABELS, dataset.dataValues, this.DEFAULT_COLORS);
