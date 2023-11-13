@@ -32,7 +32,7 @@ export class Year2023Component implements OnInit, AfterViewInit {
 
   loadCharts(): void {
     this.questions.forEach((question: Question, index: number):void => {
-      this.createPieChart('pizzaChart2023-' + (index + 1), this.DEFAULT_LABELS, question.dataValues, this.DEFAULT_COLORS);
+      this.createPieChart('pizzaChart2023-' + (index + 1), question.labels, question.dataValues, question.colors);
     });
   }
 
