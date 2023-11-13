@@ -45,7 +45,7 @@ export class ChartDataService {
     {
       text: '7 - Qual o nível de escolaridade dos servidores lotados nessa Unidade Executora de Controle Interno - Divisão de Controle e Análise Processual?',
       dataValues: [6, 1, 1, 6, 2, 2],
-      labels: ["Nível superior: Todos os servidores", "Nível médio: Todos os servidores", "Nível médio: Acima de 03 servidores", "Nível superior: De 01 a 03 servidores", "Nível médio: De 01 a 03 servidores", "Nível superior: Acima de 03 servidores",],
+      labels: ["Nível superior: Todos os servidores", "Nível médio: Todos os servidores", "Nível médio: Acima de 03 servidores", "Nível superior: De 01 a 03 servidores", "Nível médio: De 01 a 03 servidores", "Nível superior: Acima de 03 servidores"],
       colors: ["#00ffff", "yellow", "purple", "red", "blue", "green"],
     },
     {
@@ -63,7 +63,7 @@ export class ChartDataService {
     {
       text: '10 - As quantidades de computadores e mesas existentes na Divisão de Controle e Análise Processual são suficientes para atender a demanda?',
       dataValues: [14, 4],
-      labels: ["Atende em sua totalidade", "Atende parcialmente",],
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
       colors: ["blue", "yellow",]
     },
     {
@@ -75,8 +75,8 @@ export class ChartDataService {
     {
       text: '12 - A Divisão de Controle e Análise Processual possui internet Banda larga?',
       dataValues: [16, 2],
-      labels: ["Atende em sua totalidade", "Atende parcialmente",],
-      colors: ["blue", "yellow",]
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue", "yellow"]
     },
     {
       text: '13 - Estão definidas no Regimento Interno dessa Secretaria, todas as  atribuições inerentes a área operacional da Divisão de Controle e Análise Processual, para que cumpram suas determinações?',
@@ -87,7 +87,7 @@ export class ChartDataService {
     {
       text: '14 - Os procedimentos de Controle são definidos e normatizados para a operacionalização da Divisão Controle e Análise Processual?',
       dataValues: [13, 1, 3, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Não respondido",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Não respondido"],
       colors: ["blue", "red", "yellow", "#FF1493"]
     },
     {
@@ -136,7 +136,7 @@ export class ChartDataService {
       text: '22 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item VI - comunicar ao nível hierárquico superior competente o conhecimento da ocorrência de atos ilegais, ilegítimos, irregulares ou antieconômico de que resultem, ou não, danos ao erário, sob pena de responsabilidade solidária.',
       dataValues: [15, 2, 1],
       labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
-      colors: ["blue", "red", "yellow",]
+      colors: ["blue", "red", "yellow"]
     },
     {
       text: '23 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767 Cap. VI, quanto às atribuições daDivisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item VII - propor ao Órgão Central do Sistema deControle Interno e ao órgão central do respectivo sistemaadministrativo, a atualização ou a adequação dos regulamentos inerentes às suas atividades.',
@@ -172,49 +172,49 @@ export class ChartDataService {
       text: '28 - A Divisão de Controle e Análise Processual tem verificado nosprocessos administrativos das aquisições, se são iniciados por documentono qual consta explicitamente a necessidade da aquisição  (Memorando/Justificativa) devidamente autorizado pela autoridadecompetente?',
       dataValues: [17, 1],
       labels: ["Atende em sua totalidade", "Atende parcialmente"],
-      colors: ["blue", "yellow",]
+      colors: ["blue", "yellow"]
     },
     {
       text: '29 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos, se as aquisições são precedidas da elaboraçãode Termo de Referência ou Projeto Básico, em atendimento ao art. 6º,Inciso IX e art. 7º, § 2º, Inciso I e II, da Lei 8.666/93 e, ainda,conforme Item 10, Anexo I, do Dec. Municipal Nº 15.403/2018 Devidamenteautorizado pelo Ordenador de despesas?',
       dataValues: [17, 1],
-      labels: ["Atende em sua totalidade", "Atende parcialmente",],
-      colors: ["blue", "yellow",]
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue", "yellow"]
     },
     {
       text: '30 - A Divisão de Controle e Análise Processual tem verificado nos procedimentos das aquisições se constam memória de cálculo das estimativas de preços (Mínimo de três Cotações de Preços), com especificação completa do produto ou serviço, conforme disposto no Item 03 e Item 07, Anexo I, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
-      labels: ["Atende em sua totalidade", "Atende parcialmente",],
-      colors: ["blue", "yellow",]
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue", "yellow"]
     },
     {
       text: '31 - A Divisão de Controle e Análise Processual tem verificado nosprocessos administrativos, se constam dos autos o Quadro Comparativo dePreços, devidamente certificado quanto à compatibilidade dos preços como mercado local e que as empresas são do ramo de atividade pertinente aoobjeto da despesa, conforme Item 08, Anexo I, do Dec. Municipal Nº15.403/2018?',
       dataValues: [16, 2],
-      labels: ["Atende em sua totalidade", "Atende parcialmente",],
-      colors: ["blue", "yellow",]
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue", "yellow"]
     },
     {
       text: '32 - A Divisão de Controle e Análise Processual tem verificado oMemorando expedido pelo setor demandante da Unidade Requisitante doproduto/serviço, datado e assinado pelo dirigente do setor requisitante,  devidamente autorizado pela autoridade competente, no qual deveráconstar a especificação do pedido de acordo com a Ata de Registro dePreços e, a partir do segundo gerenciamento da mesma ata, deverá seranexado posições de empenho impressas do Sistema Informatizado de Contabilidade referente aos gerenciamentos anteriores, conforme Item 01,Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '33 - A Divisão de Controle e Análise Processual tem verificado aautorização da despesa pelo ordenador da despesa, na Requisição deGerenciamento de Ata de Registro de Preços (Art. 25 da Lei Complementar nº 648/2017 e alterações). Conforme Item 04, Anexo III, do Dec.Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
       labels: ["Atende em sua totalidade", "Atende parcialmente"],
-      colors: ["blue", "yellow",]
+      colors: ["blue", "yellow"]
     },
     {
       text: ' 34 - A Divisão de Controle e Análise Processual tem verificado aautorização da despesa pelo ordenador da despesa, na Requisição deGerenciamento de Ata de Registro de Preços (Art. 25 da Lei Complementarnº 648/2017 e alterações). Conforme Item 04, Anexo III, do Dec.  Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
       labels: ["Atende em sua totalidade", "Atende parcialmente"],
-      colors: ["blue", "yellow",]
+      colors: ["blue", "yellow"]
     },
     {
       text: '35 - A Divisão de Controle e Análise Processual tem verificado seconstam dos autos, despacho emitido pela unidade requisitante, enviando os autos à Superintendência Municipal de Gestão de Gastos Públicos, paraanálise do pedido e gerenciamento da ata de registro de preços, conforme Item 06, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
-      labels: ["Atende em sua totalidade", "Atende parcialmente",],
-      colors: ["blue", "yellow",]
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue", "yellow"]
     },
     {
       text: '36 - A Divisão de Controle e Análise Processual tem verificado a Reservade Saldo Orçamentário emitida pela Secretaria Municipal de Planejamento,Orçamento e Gestão - SEMPOG, com data e assinatura, conforme Item 10, Anexo III, do Dec. Municipal Nº 15.403/2018?',
@@ -225,14 +225,14 @@ export class ChartDataService {
     {
       text: '37 - A Divisão de Controle e Análise Processual tem verificado aassinatura na nota de empenho pelo servidor registrado no SistemaInformatizado e pelo ordenador de despesas da unidade requisitante,conforme Item 12, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [16, 2],
-      labels: ["Atende em sua totalidade", "Atende parcialmente",],
-      colors: ["blue", "yellow",]
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue", "yellow"]
     },
     {
       text: '38 - A Divisão de Controle e Análise Processual tem verificado a entregada nota de empenho ao fornecedor, quando for o caso, realizada pelaunidade requisitante, ordem de serviço ou de fornecimento, com data,assinatura e identificação do responsável pela empresa no verso dodocumento, conforme Item 13, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
       labels: ["Atende em sua totalidade"],
-      colors: ["blue",]
+      colors: ["blue"]
     },
     {
       text: '39 - A Divisão de Controle e Análise Processual tem verificado oContrato emitido pela Procuradoria Geral do Município, para os casosprevistos no artigo 62 da Lei Federal nº 8.666/93, observando ascláusulas necessárias estabelecidas no art. 55 da Lei Federal nº8.666/93, conforme Item 15, Anexo III, do Dec. Municipal Nº 15.403/2018?',
@@ -250,7 +250,7 @@ export class ChartDataService {
       text: '41- A Divisão de Controle e Análise Processual tem verificado a Publicação no D.O.M da nomeação do Gestor e Fiscal do Contrato, quando for o caso, realizada pelo ordenador de despesas da unidade requisitante, quando for o caso, conforme Item 19, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [16, 2],
       labels: ["Atende em sua totalidade", "Não respondido"],
-      colors: ["blue", "#FF1493",]
+      colors: ["blue", "#FF1493"]
     },
     {
       text: '42 - A Divisão de Controle e Análise Processual tem verificado NotaFiscal com preço unitário, total, data de emissão, dados da Prefeitura de Porto Velho, marca, quantidade, volume e dimensão (especificação  completa do produto ou serviço), devidamente certificada pelosservidores que efetuaram o recebimento/conferência no verso e datada, conforme Item 20, Anexo III, do Dec. Municipal Nº 15.403/2018?',
@@ -261,20 +261,20 @@ export class ChartDataService {
     {
       text: '43 - A Divisão de Controle e Análise Processual tem verificado Certidões Negativas de débitos: INSS, FGTS, Justiça Trabalhista, Tributos Federais, Estaduais e Municipais, com validade e autenticida verificadas e certificadas por servidor devidamente identificado comnome completo, número do cadastro e cargo que exerce. Atenção: conferir os dados do fornecedor nas certidões (número da certidão, razão social,endereço, CNPJ, etc) - (Art. 28 e 29, da Lei Federal nº 8.666/93),conforme Item 23, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
+      labels: ["Atende em sua totalidade"],
       colors: ["blue"]
     },
     {
       text: '44 - Nos processos administrativos de aquisição por adesão a Ata de Registro de Preços, há declaração explícita (Mem./Justificativa), de compatibilidade entre as especificações do objeto contratado e anecessidade da Secretaria, devidamente assinada pelo ordenador dedespesa, conforme Item 03, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '45 - A Divisão de Controle e Análise Processual tem verificado se as aquisições dos processos administrativos realizados por meio de adesão a Ata de Registro de Preços, contêm documento com a autorização formal do gestor da ata, bem como autorização do fornecedor para a adesão,conforme Item 04, Anexo IV, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: "46 - A Divisão de Controle e Análise Processual tem verificado Cópias do edital original, e não da minuta, e da respectiva Ata de Registro de Preço Publicada, demonstrando sua vigência e previsão de adesão à ata com a possibilidade da ''Carona'', consignando, se possível, o número de adesões a serem recepcionadas pelo gerenciador, conforme Item 05, Anexo IV, do Dec. Municipal Nº 15.403/2018?",
@@ -303,25 +303,25 @@ export class ChartDataService {
     {
       text: '50 - A Divisão de Controle e Análise Processual tem verificado a Justificativa da Vantajosidade e Economicidade da Adesão à Ata de Registro de Preços assinada pelo ordenador de despesa, Anexo XXVIII deste Decreto, conforme Item 18, Anexo IV, do Dec. Municipal Nº15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '51 - A Divisão de Controle e Análise Processual tem verificado o Parecer Jurídico da Procuradoria Geral do Município (Art. 38, Parágrafo único, da Lei Federal nº 8.666/93), conforme Item 21, Anexo IV, do Dec Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '52 - A Divisão de Controle e Análise Processual tem verificado a Publicação no DOM do Termo de Adesão a Ata de Registro de Preço (Carona) expedido pela unidade requisitante, conforme Item 22, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '53 - A Divisão de Controle e Análise Processual tem verificado se as aquisições dos processos administrativos por meio de Pregão Presencial, constam justificativas da inviabilidade da utilização da forma  eletrônica, conforme Artigo 4º, § 1º do Decreto Federal nº 5.450/05?',
       dataValues: [15, 1, 1, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Não respondido",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Não respondido"],
       colors: ["blue", "red", "yellow", "#FF1493"]
     },
   ];
