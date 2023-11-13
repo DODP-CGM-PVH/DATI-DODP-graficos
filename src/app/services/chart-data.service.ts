@@ -480,8 +480,8 @@ export class ChartDataService {
     {
       text: '26 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/19, Cap. VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item VIII - apoiar os trabalhos de avaliação de controle interno de gestão, facilitando o acesso adocumentos e informações.',
       dataValues: [17, 1],
-      labels: ["Atende em sua totalidade", "Não atende",],
-      colors: ["blue", "red",]
+      labels: ["Atende em sua totalidade", "Não atende"],
+      colors: ["blue", "red"]
     },
     {
       text: '27 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos de despesas a conformidade com a Legislação vigente e com a diretrizes de governança e de gestão?',
@@ -492,8 +492,8 @@ export class ChartDataService {
     {
       text: '28 - Na Divisão de Controle e Análise Processual, em casos comprovados de irregularidades, são encaminhadas tempestivamente as informações para os órgãos de controle competentes?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '29 - A Divisão de Controle e Análise Processual tem verificado se o processo administrativo está devidamente autuado, protocolado, numerado e rubricado por toda Secretaria onde o processo tramite, conforme orientação do art. 38, da Lei Federal nº 8.666/93, em conformidade com Item 02, Anexo I, do Dec. Municipal Nº 15.403/2018?',
@@ -504,73 +504,73 @@ export class ChartDataService {
     {
       text: '30 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos das aquisições, se são iniciados por documento no qual consta explicitamente a necessidade da aquisição (Memorando/Justificativa) devidamente autorizado pela autoridade  competente?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '31 - A Divisão de Controle e Análise Processual tem verificado nos processos administrativos, se as aquisições são precedidas da elaboração  de Termo de Referência ou Projeto Básico, em atendimento ao art. 6º, Inciso IX e art. 7º, § 2º, Inciso I e II, da Lei 8.666/93 e, ainda,  conforme Item 10, Anexo I, do Dec. Municipal Nº 15.403/2018 Devidamente autorizado pelo Ordenador de despesas?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '32 - A Divisão de Controle e Análise Processual tem verificado nos procedimentos das aquisições se constam memória de cálculo das estimativas de preços (Mínimo de três Cotações de Preços), com especificação completa do produto ou serviço, conforme disposto no Item  03 e Item 07, Anexo I, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '33 - A Divisão de Controle e Análise Processual tem verificado nos  processos administrativos, se constam dos autos o Quadro Comparativo de Preços, devidamente certificado quanto à compatibilidade dos preços com o mercado local e que as empresas são do ramo de atividade pertinente ao objeto da despesa, conforme Item 08, Anexo I, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '34 - A Divisão de Controle e Análise Processual tem verificado o Memorando expedido pelo setor demandante da Unidade Requisitante do produto/serviço, datado e assinado pelo dirigente do setor requisitante, devidamente autorizado pela autoridade competente, no qual deverá  constar a especificação do pedido de acordo com a Ata de Registro de  Preços e, a partir da mesma ata, deverá ser anexado posições de empenho impressas do Sistema Informatizado de Contabilidade referente aos gerenciamentos anteriores, conforme Item 01, Anexo III, do Dec. Municipal nº 15.403/2018?',
-      dataValues: [17, 1,],
+      dataValues: [17, 1],
       labels: ["Atende em sua totalidade", "Atende parcialmente"],
       colors: ["blue", "yellow"]
     },
     {
       text: '35 - A Divisão de Controle e Análise Processual tem verificado a autorização da despesa pelo ordenador da despesa, na Requisição de Gerenciamento de Ata de Registro de Preços (Art. 25 da Lei Complementar nº 648/2017 e alterações). Conforme Item 04, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '36 - A Divisão de Controle e Análise Processual tem verificado se constam dos autos, despacho emitido pela unidade requisitante, enviando os autos à Superintendência Municipal de Gestão de Gastos Públicos, para análise do pedido e gerenciamento da ata de registro de preços, conforme  Item 06, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '37 - A Divisão de Controle e Análise Processual tem verificado a Reserva  de Saldo Orçamentário emitida pela Secretaria Municipal de Planejamento, Orçamento e Gestão - SEMPOG, com data e assinatura, conforme Item 10, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '38 - A Divisão de Controle e Análise Processual tem verificado a  assinatura na nota de empenho pelo servidor registrado no Sistema Informatizado e pelo ordenador de despesas da unidade requisitante, conforme Item 12, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
-      colors: ["blue",]
+      labels: ["Atende em sua totalidade"],
+      colors: ["blue"]
     },
     {
       text: '39 - A Divisão de Controle e Análise Processual tem verificado a entrega da nota de empenho ao fornecedor, quando for o caso, realizada pela unidade requisitante, ordem de serviço ou de fornecimento, com data  assinatura e identificação do responsável pela empresa no verso do documento, conforme Item 13, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
-      labels: ["Atende em sua totalidade", , "Atende parcialmente"],
+      labels: ["Atende em sua totalidade", "Atende parcialmente"],
       colors: ["blue", "yellow"]
     },
     {
       text: '40 - A Divisão de Controle e Análise Processual tem verificado o Contrato emitido pela Procuradoria Geral do Município, para os casos previstos no artigo 62 da Lei Federal nº 8.666/93, observando as  cláusulas necessárias estabelecidas no art. 55 da Lei Federal nº 8.666/93, conforme Item 15, Anexo III, do Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
+      labels: ["Atende em sua totalidade"],
       colors: ["blue"]
     },
     {
-      text: ' 41 - A Divisão de Controle e Análise Processual tem verificado a Publicação no D.O.M do extrato do Contrato, quando for o caso, conforme prazo estabelecido da Lei nº 8.666/1993, conforme Item 18, Anexo III, do  Dec. Municipal Nº 15.403/2018?',
+      text: '41 - A Divisão de Controle e Análise Processual tem verificado a Publicação no D.O.M do extrato do Contrato, quando for o caso, conforme prazo estabelecido da Lei nº 8.666/1993, conforme Item 18, Anexo III, do  Dec. Municipal Nº 15.403/2018?',
       dataValues: [18],
-      labels: ["Atende em sua totalidade",],
+      labels: ["Atende em sua totalidade"],
       colors: ["blue"]
     },
     {
@@ -643,7 +643,7 @@ export class ChartDataService {
       text: '53 - A Divisão de Controle e Análise Processual tem verificado a Publicação no DOM do Termo de Adesão a Ata de Registro de Preço (Carona)  expedido pela unidade requisitante, conforme Item 22, Anexo IV, do Dec.Municipal Nº 15.403/2018?',
       dataValues: [17, 1],
       labels: ["Atende em sua totalidade", "Atende parcialmente"],
-      colors: ["blue", "red", "yellow"]
+      colors: ["blue", "yellow"]
     },
     {
       text: '54 - A Divisão de Controle e Análise Processual tem verificado se as aquisições dos processos administrativos por meio de Pregão Presencial,  constam justificativas da inviabilidade da utilização da forma eletrônica, conforme Artigo 4º, § 1º do Decreto Federal nº 5.450/05?',
@@ -654,49 +654,49 @@ export class ChartDataService {
     {
       text: '55 - O Órgão/Entidade possui planejamento estratégico com Missão, Visão, Valores, Objetivos, Indicadores e Metas aprovados?',
       dataValues: [10, 3, 3, 1, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas", "Não respondeu",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas", "Não respondeu"],
       colors: ["blue", "red", "yellow", "green", "#FF1493"]
     },
     {
       text: '56 - O Órgão/Entidade possui cadeia de valores definindo osmacroprocessos gerenciais, de apoio e finalísticos?',
       dataValues: [10, 3, 3, 1, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"]
     },
     {
       text: '57 - O Órgão/Entidade instituiu comitê interno de governança com o objetivo de garantir que as boas praticas de governança se desenvolvam e sejam apropriadas pela instituição de forma contínua e progressiva, conforme Art. 14 do Decreto nº 15.261/2018?',
       dataValues: [4, 11, 2, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"]
     },
     {
       text: '58 - O Órgão/Entidade designou unidade nova ou existente de gestão da integridade, à qual foi atribuída competência para coordenação da  estruturação, execução e monitoramento do Programa de Integridade; orientação e treinamento dos servidores com relação aos temas atinentes  ao Programa de Integridade; e promoção de outras ações relacionadas à implementação do Programa de Integridade, em conjunto com as demais  unidades do órgão ou entidade?',
       dataValues: [4, 9, 4, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"]
     },
     {
       text: '59 - O Órgão/Entidade aprovou seu plano de integridade, contendo caracterização do órgão ou entidade; ações de estabelecimento das unidades; levantamento de riscos para a integridade e medidas para seu tratamento; e previsão sobre a forma de monitoramento e a realização de  atualização periódica do Plano de Integridade?',
       dataValues: [3, 10, 4, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"],
     },
     {
       text: '60 - O Órgão/Entidade estabeleceu estratégia de organização e estrutura de gerenciamento de riscos, incluindo o estabelecimento, a manutenção, o monitoramento e o aperfeiçoamento dos controles internos da gestão?',
       dataValues: [3, 10, 4, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"]
     },
     {
       text: '61 - O Órgão/Entidade expediu instruções normativas que definam as rotinas de trabalho e que identifiquem, por subtítulos, os nomes das  unidades executoras; os conceitos que uniformizem o entendimento sobre  os aspectos mais relevantes ao assunto objeto da normatização; base  legal e regulamentar que interferem ou orientam as rotinas de trabalho e  os procedimentos de controle; processos que contemplam a gestão de  riscos descrevendo as atividades de identificar, avaliar e gerenciar  potenciais eventos que possam afetar a organização; responsabilidades  especificas das unidade responsáveis; e procedimentos de controledemonstrados em fluxograma?',
       dataValues: [6, 7, 4, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"]
     },
     {
       text: ' 62 - Estão divulgadas no sítio eletrônico oficial do Órgão/Entidade as informações descritas nos itens anteriores?',
       dataValues: [6, 6, 5, 1],
-      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas",],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"]
     },
   ];
