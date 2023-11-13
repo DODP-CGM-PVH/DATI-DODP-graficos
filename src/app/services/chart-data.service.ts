@@ -444,7 +444,7 @@ export class ChartDataService {
     {
       text: '20 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item II - exercer o acompanhamento visando o controle sobre a execução do seu Orçamento Anual visando ocumprimento dos objetivos e metas inerentes à sua área de atuaçãodefinida no Plano Plurianual e na Lei de Diretrizes Orçamentária.',
       dataValues: [3, 12, 3],
-      labels: ["label1", "label2", "label 3"],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
       colors: ["blue", "red", "yellow"]
     },
     {
