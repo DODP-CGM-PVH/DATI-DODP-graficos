@@ -341,10 +341,9 @@ export class ChartDataService {
     },
     {
       text: '3 - O vínculo com o Município, dos servidores lotados na Divisão de Controle e Análise Processual, é preferencialmente efetivo?',
-      dataValues: [5, 1, 12],
+      dataValues: [14, 4],
       labels: ["Atende em sua totalidade", "Atende parcialmente"],
       colors: ["blue", "yellow"]
-
     },
     {
       text: '4 - Os servidores lotados na Divisão de Controle e Análise Processual são designados especificamente para essa atividade em atendimento ao Princípio da Segregação de Funções?',
@@ -439,8 +438,8 @@ export class ChartDataService {
     {
       text: '19 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, bem como na LC nº 767/2019, Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item I - exercer os controles estabelecidos nos regulamentos do sistema administrativo afetos a sua área de atuação, no que tange as atividades específicas ou auxiliares objetivando a observância da legislação, a salvaguarda do patrimônio e a busca da eficiência operacional: (ex. análise de processo antes do pagamento, com conferência do Check - List), conforme Dec. nº 15.403/2018.',
       dataValues: [17, 1],
-      labels: ["Atende em sua totalidade", "Não atende",],
-      colors: ["blue", "red",]
+      labels: ["Atende em sua totalidade", "Não atende"],
+      colors: ["blue", "red"]
     },
     {
       text: '20 - Considerando as orientações expedidas no Ofício Circular nº 033/DOP/GAB/CGM/2017, LC nº 767/2019 Capítulo VI, art. 10, quanto às atribuições da Divisão de Controle e Análise Processual, as atribuições descritas estão sendo realizadas? Item II - exercer o acompanhamento visando o controle sobre a execução do seu Orçamento Anual visando ocumprimento dos objetivos e metas inerentes à sua área de atuaçãodefinida no Plano Plurianual e na Lei de Diretrizes Orçamentária.',
