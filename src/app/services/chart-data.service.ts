@@ -9,7 +9,7 @@ export class ChartDataService {
     {
       text: '1 - A nomeação para a gerência da Divisão de Controle e Análise Processual da sua Secretaria já está definida e publicada no DOM?',
       dataValues: [16, 1, 1],
-      labels: ["label1", "label2", "label 3"],
+      labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
       colors: ["blue", "red", "yellow"]
     },
     {
