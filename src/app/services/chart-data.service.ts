@@ -694,7 +694,7 @@ export class ChartDataService {
       colors: ["blue", "red", "yellow", "green"]
     },
     {
-      text: ' 62 - Estão divulgadas no sítio eletrônico oficial do Órgão/Entidade as informações descritas nos itens anteriores?',
+      text: '62 - Estão divulgadas no sítio eletrônico oficial do Órgão/Entidade as informações descritas nos itens anteriores?',
       dataValues: [6, 6, 5, 1],
       labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "Gerente da Divisão deve recorrer ao secretário Ordenador)\n por se tratar de questões gerenciais, compete ao ordenador \n deliberação quanto as respostas das questões supramencionadas"],
       colors: ["blue", "red", "yellow", "green"]
