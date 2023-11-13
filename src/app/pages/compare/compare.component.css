@@ -9,13 +9,32 @@
 }
 
 .chart-container {
-  width: 30%; /* Ajuste a largura conforme necessário */
+  width: 30%;
+
+
   text-align: center;
+  position: relative;
+}
+
+.chart-container.vertical-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+
+
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background-color: #000;
+
+
+  margin-right: 15px;
 }
 
 .chart-container h4 {
   margin-bottom: 10px;
 }
+
 .question-title {
   text-align: center;
 }
