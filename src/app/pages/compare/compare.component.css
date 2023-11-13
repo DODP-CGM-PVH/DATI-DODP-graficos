@@ -38,3 +38,24 @@
 .question-title {
   text-align: center;
 }
+
+/* Estiliza o parágrafo com o texto da questão */
+p {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  margin-bottom: 1rem; /* Espaço abaixo do parágrafo */
+  color: #333; /* Cor do texto */
+  text-align: justify; /* Alinhamento do texto */
+}
+
+/* Estiliza o contêiner do gráfico */
+.canvas-container {
+  max-width: 600px; /* Largura máxima do gráfico */
+  margin: auto; /* Centraliza o gráfico */
+}
+
+/* Estiliza o canvas do gráfico */
+canvas {
+  width: 100% !important; /* Largura total dentro do contêiner */
+  max-width: 400px; /* Largura máxima */
+  height: auto !important; /* Altura automática para manter a proporção */
+}

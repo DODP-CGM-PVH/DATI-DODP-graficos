@@ -10,80 +10,80 @@ import {Question} from "../../interfaces/questionInterface";
   templateUrl: './compare.component.html',
   styleUrls: ['./compare.component.css']
 })
-export class CompareComponent implements AfterViewInit, OnInit {
+export class CompareComponent implements OnInit, AfterViewInit {
 
-  year2021: Question[] = this.chartDataService.getQuestions("2021")
-  year2022: Question[] = this.chartDataService.getQuestions("2022")
+    questions2021: Question[] = [];
+    questions2022: Question[] = [];
+    questions2023: Question[] = [];
 
-  readonly DEFAULT_LABELS: string[] = [
-    "Atende em sua totalidade",
-    "Não atende",
-    "Atende parcialmente"
-  ];
-  readonly DEFAULT_COLORS: string[] = ["blue", "red", "yellow"];
+    constructor(private chartDataService: ChartDataService, private el: ElementRef) { }
 
-  constructor(private chartDataService: ChartDataService, private el: ElementRef) { }
+    ngOnInit(): void {
+        this.questions2021 = this.chartDataService.getQuestions('2021');
+        this.questions2022 = this.chartDataService.getQuestions('2022');
+        this.questions2023 = this.chartDataService.getQuestions('2023');
+    }
 
-  ngOnInit(): void { }
+    ngAfterViewInit(): void {
+        this.loadCharts();
+    }
 
-  ngAfterViewInit(): void {
-    console.log("Comparisons:", this.comparisons);
-    this.loadComparisonCharts();
-  }
+    readonly DEFAULT_LABELS: string[] = [
+        "Atende em sua totalidade",
+        "Não atende",
+        "Atende parcialmente"
+    ];
+    readonly DEFAULT_VALUES: number[] = [50, 50];
+    readonly DEFAULT_COLORS: string[] = ["blue", "red", "yellow"];
 
-  comparisons: Comparison[] = [
-    {
-      title: 'Comparison 2021',
-      dataSets: this.year2021
-    },
-    {
-      title: 'Comparison 2022',
-      dataSets: this.year2022
-    },
-    // ... Mais objetos de comparação
-  ];
 
-  loadComparisonCharts(): void {
-    this.comparisons.forEach((comparison, i) => {
-      comparison.dataSets.forEach((dataset, j) => {
-        this.createPieChart(`compareChart-${i}-${j}`, this.DEFAULT_LABELS, dataset.dataValues, this.DEFAULT_COLORS);
-      });
-    });
-  }
+    loadCharts(): void {
+        this.questions2021.forEach((question: Question, index: number):void => {
+            this.createPieChart('pizzaChart2021-' + (index + 1), question.labels, question.dataValues, question.colors);
+        });
 
-  createPieChart(elementId: string, dataLabels: string[], dataValues: number[], backgroundColors: string[], borderWidth = 0): void {
-    const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
-    const data = this.getPieChartData(dataLabels, dataValues, backgroundColors, borderWidth);
-    new Chart(ctx, {
-      type: 'pie',
-      data: data,
-      options: this.getDefaultChartOptions()
-    });
-  }
+        this.questions2022.forEach((question: Question, index: number):void => {
+            this.createPieChart('pizzaChart2022-' + (index + 1), question.labels, question.dataValues, question.colors);
+        });
 
-getPieChartData(labels: string[], values: number[], colors: string[], borderWidth: number): any {
-    return {
-      labels: labels,
-      datasets: [{
-        data: values,
-        backgroundColor: colors,
-        borderWidth: borderWidth,
-      }],
-    };
-  }
+        this.questions2023.forEach((question: Question, index: number):void => {
+            this.createPieChart('pizzaChart2023-' + (index + 1), question.labels, question.dataValues, question.colors);
+        });
+    }
 
-  getDefaultChartOptions(): any {
-    return {
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: {
-            font: {
-              size: 24
+    createPieChart(elementId: string, dataLabels: string[], dataValues: number[], backgroundColors: string[], borderWidth:number = 0): void {
+        const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
+        const data = this.getPieChartData(dataLabels, dataValues, backgroundColors, borderWidth);
+        new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: this.getDefaultChartOptions()
+        });
+    }
+
+    getPieChartData(labels: string[], values: number[], colors: string[], borderWidth: number): any {
+        return {
+            labels: labels,
+            datasets: [{
+                data: values,
+                backgroundColor: colors,
+                borderWidth: borderWidth,
+            }],
+        };
+    }
+
+    getDefaultChartOptions(): any {
+        return {
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            size: 24
+                        }
+                    }
+                }
             }
-          }
-        }
-      }
-    };
-  }
+        };
+    }
 }

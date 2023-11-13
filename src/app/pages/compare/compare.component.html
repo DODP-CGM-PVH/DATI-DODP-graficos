@@ -1,11 +1,22 @@
-<div class="compare-container" *ngIf="comparisons && comparisons.length > 0">
-  <div *ngFor="let question of year2021; let qIndex = index">
-    <h3 class="question-title">Questão {{ qIndex + 1 }}</h3>
-    <h3 class="question-title">{{ question.text }}</h3>
-    <div class="charts-row">
-      <div *ngFor="let year of comparisons; let yIndex = index" class="chart-container vertical-line">
-        <h4>{{ year.title }}</h4>
-        <canvas id="compareChart-{{yIndex}}-{{qIndex}}"></canvas>
+<div class="container mt-5">
+  <div class="row mb-5" *ngFor="let question of questions2021; let i = index">
+    <!--2021-->
+    <div class="col-md-6">
+      <div class="col-12">
+        <p>{{ questions2021[i].text }}</p>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <canvas [id]="'pizzaChart2021-' + (i + 1)"></canvas>
+      </div>
+    </div>
+
+    <!--2022-->
+    <div class="col-md-6">
+      <div class="col-12">
+        <p>{{ questions2022[i].text }}</p>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <canvas [id]="'pizzaChart2022-' + (i + 1)"></canvas>
       </div>
     </div>
   </div>
