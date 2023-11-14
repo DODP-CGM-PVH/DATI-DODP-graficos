@@ -66,9 +66,6 @@ export class Year2021Component implements OnInit, AfterViewInit {
           font: {
             size: 14,
           },
-          formatter: (value: any) => {
-            return value + '%';
-          },
         },
       }],
     };
@@ -78,13 +75,29 @@ export class Year2021Component implements OnInit, AfterViewInit {
     return {
       plugins: {
         legend: {
-          display: true, // Agora a legenda será exibida
+          display: true,
           position: 'bottom',
           labels: {
             font: {
               size: 14,
             },
           },
+        },
+        datalabels: {
+          color: 'transparent',
+        },
+      },
+      tooltips: {
+        callbacks: {
+          label: function (tooltipItem: any, data: any) {
+            let dataset = data.datasets[tooltipItem.datasetIndex];
+            let currentValue = dataset.data[tooltipItem.index];
+            return currentValue + '%';
+          },
+        },
+        displayColors: false,
+        bodyFont: {
+          weight: 'bold',
         },
       },
     };

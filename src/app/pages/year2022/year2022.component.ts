@@ -1,8 +1,8 @@
-import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
 import Chart from 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import { Question } from '../../interfaces/questionInterface';
-import { ChartDataService } from '../../services/chart-data.service';
+import { Question } from "../../interfaces/questionInterface";
+import { ChartDataService } from "../../services/chart-data.service";
 
 @Component({
   selector: 'app-year2022',
@@ -24,29 +24,18 @@ export class Year2022Component implements OnInit, AfterViewInit {
   }
 
   readonly DEFAULT_LABELS: string[] = [
-    'Atende em sua totalidade',
-    'Não atende',
-    'Atende parcialmente'
+    "Atende em sua totalidade",
+    "Não atende",
+    "Atende parcialmente"
   ];
 
   loadCharts(): void {
     this.questions.forEach((question: Question, index: number): void => {
-      this.createPieChart(
-        'pizzaChart2022-' + (index + 1),
-        question.labels,
-        question.dataValues,
-        question.colors
-      );
+      this.createPieChart('pizzaChart2022-' + (index + 1), question.labels, question.dataValues, question.colors);
     });
   }
 
-  createPieChart(
-    elementId: string,
-    dataLabels: string[],
-    dataValues: number[],
-    backgroundColors: string[],
-    borderWidth: number = 0
-  ): void {
+  createPieChart(elementId: string, dataLabels: string[], dataValues: number[], backgroundColors: string[], borderWidth: number = 0): void {
     const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
     const total = dataValues.reduce((acc, value) => acc + value, 0);
     const percentages = dataValues.map(value => ((value / total) * 100).toFixed(2));
@@ -77,9 +66,6 @@ export class Year2022Component implements OnInit, AfterViewInit {
           font: {
             size: 14,
           },
-          formatter: (value: any) => {
-            return value + '%';
-          },
         },
       }],
     };
@@ -89,13 +75,29 @@ export class Year2022Component implements OnInit, AfterViewInit {
     return {
       plugins: {
         legend: {
-          display: true, // Agora a legenda será exibida
+          display: true,
           position: 'bottom',
           labels: {
             font: {
               size: 14,
             },
           },
+        },
+        datalabels: {
+          color: 'transparent',
+        },
+      },
+      tooltips: {
+        callbacks: {
+          label: function (tooltipItem: any, data: any) {
+            let dataset = data.datasets[tooltipItem.datasetIndex];
+            let currentValue = dataset.data[tooltipItem.index];
+            return currentValue + '%';
+          },
+        },
+        displayColors: false,
+        bodyFont: {
+          weight: 'bold',
         },
       },
     };
