@@ -78,7 +78,13 @@ export class Year2021Component implements OnInit, AfterViewInit {
     return {
       plugins: {
         legend: {
-          display: false, // Oculta a legenda
+          display: true, // Agora a legenda será exibida
+          position: 'bottom',
+          labels: {
+            font: {
+              size: 14,
+            },
+          },
         },
       },
     };

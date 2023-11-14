@@ -1,8 +1,8 @@
-import {AfterViewInit, Component, ElementRef, OnInit} from '@angular/core';
-import Chart from "chart.js/auto";
-import {Question} from "../../interfaces/questionInterface";
-import {ChartDataService} from "../../services/chart-data.service";
-
+import { AfterViewInit, Component, ElementRef, OnInit } from '@angular/core';
+import Chart from 'chart.js/auto';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { Question } from '../../interfaces/questionInterface';
+import { ChartDataService } from '../../services/chart-data.service';
 
 @Component({
   selector: 'app-year2022',
@@ -16,7 +16,7 @@ export class Year2022Component implements OnInit, AfterViewInit {
   constructor(private chartDataService: ChartDataService, private el: ElementRef) { }
 
   ngOnInit(): void {
-    this.questions = this.chartDataService.getQuestions('2021');
+    this.questions = this.chartDataService.getQuestions('2022');
   }
 
   ngAfterViewInit(): void {
@@ -24,22 +24,37 @@ export class Year2022Component implements OnInit, AfterViewInit {
   }
 
   readonly DEFAULT_LABELS: string[] = [
-    "Atende em sua totalidade",
-    "Não atende",
-    "Atende parcialmente"
+    'Atende em sua totalidade',
+    'Não atende',
+    'Atende parcialmente'
   ];
-  readonly DEFAULT_VALUES: number[] = [50, 50];
-  readonly DEFAULT_COLORS: string[] = ["blue", "red", "yellow"];
 
   loadCharts(): void {
-    this.questions.forEach((question: Question, index: number):void => {
-      this.createPieChart('pizzaChart2022-' + (index + 1), question.labels, question.dataValues, question.colors);
+    this.questions.forEach((question: Question, index: number): void => {
+      this.createPieChart(
+        'pizzaChart2022-' + (index + 1),
+        question.labels,
+        question.dataValues,
+        question.colors
+      );
     });
   }
 
-  createPieChart(elementId: string, dataLabels: string[], dataValues: number[], backgroundColors: string[], borderWidth:number = 0): void {
+  createPieChart(
+    elementId: string,
+    dataLabels: string[],
+    dataValues: number[],
+    backgroundColors: string[],
+    borderWidth: number = 0
+  ): void {
     const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
-    const data = this.getPieChartData(dataLabels, dataValues, backgroundColors, borderWidth);
+    const total = dataValues.reduce((acc, value) => acc + value, 0);
+    const percentages = dataValues.map(value => ((value / total) * 100).toFixed(2));
+
+    const data = this.getPieChartData(dataLabels, percentages, backgroundColors, borderWidth);
+
+    Chart.register(ChartDataLabels);
+
     new Chart(ctx, {
       type: 'pie',
       data: data,
@@ -47,13 +62,25 @@ export class Year2022Component implements OnInit, AfterViewInit {
     });
   }
 
-  getPieChartData(labels: string[], values: number[], colors: string[], borderWidth: number): any {
+  getPieChartData(labels: string[], percentages: string[], colors: string[], borderWidth: number): any {
     return {
       labels: labels,
       datasets: [{
-        data: values,
+        data: percentages,
         backgroundColor: colors,
         borderWidth: borderWidth,
+        hoverOffset: 4,
+        datalabels: {
+          labels: percentages.map(percentage => percentage + '%'),
+          anchor: 'end',
+          align: 'start',
+          font: {
+            size: 14,
+          },
+          formatter: (value: any) => {
+            return value + '%';
+          },
+        },
       }],
     };
   }
@@ -62,14 +89,15 @@ export class Year2022Component implements OnInit, AfterViewInit {
     return {
       plugins: {
         legend: {
+          display: true, // Agora a legenda será exibida
           position: 'bottom',
           labels: {
             font: {
-              size: 24
-            }
-          }
-        }
-      }
+              size: 14,
+            },
+          },
+        },
+      },
     };
   }
 }
