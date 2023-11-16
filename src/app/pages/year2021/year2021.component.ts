@@ -36,13 +36,13 @@ export class Year2021Component implements OnInit, AfterViewInit {
   }
 
   createPieChart(elementId: string, dataLabels: string[], dataValues: number[], backgroundColors: string[], borderWidth: number = 0): void {
-    const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
-    const total = dataValues.reduce((acc, value) => acc + value, 0);
-    const percentages= dataValues.map(value => (
+      const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
+      const total = dataValues.reduce((acc, value) => acc + value, 0);
+      const percentages= dataValues.map(value => (
 
-      (value / total) * 100).toFixed(2)
+        (value / total) * 100).toFixed(2)
 
-    );
+      );
 
     console.log(percentages)
 

@@ -77,10 +77,14 @@ export class Year2022Component implements OnInit, AfterViewInit {
         legend: {
           display: true,
           position: 'bottom',
+          align: 'start', // Alinhar a legenda à esquerda
           labels: {
+            boxWidth: 20,
+            padding: 10,
             font: {
               size: 14,
             },
+            textAlign: 'left'
           },
         },
         datalabels: {

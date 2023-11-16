@@ -6,15 +6,13 @@ p {
   text-align: justify; /* Alinhamento do texto */
 }
 
-/* Estiliza o contêiner do gráfico */
-.canvas-container {
-  max-width: 600px; /* Largura máxima do gráfico */
-  margin: auto; /* Centraliza o gráfico */
+.col-12 {
+  max-width: 600px;
+  margin: auto;
 }
 
-/* Estiliza o canvas do gráfico */
 canvas {
-  width: 100% !important; /* Largura total dentro do contêiner */
-  max-width: 400px; /* Largura máxima */
-  height: auto !important; /* Altura automática para manter a proporção */
+  width: 100% !important;
+  max-width: 400px;
+  height: auto !important;
 }
