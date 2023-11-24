@@ -1,8 +1,7 @@
 import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
-import Chart from 'chart.js/auto';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { Question } from "../../interfaces/questionInterface";
 import { ChartDataService } from "../../services/chart-data.service";
+import { ChartService } from "../../services/chart.service"; // Importe o serviço ChartService
 
 @Component({
   selector: 'app-year2021',
@@ -10,10 +9,13 @@ import { ChartDataService } from "../../services/chart-data.service";
   styleUrls: ['./year2021.component.css']
 })
 export class Year2021Component implements OnInit, AfterViewInit {
-
   questions: Question[] = [];
 
-  constructor(private chartDataService: ChartDataService, private el: ElementRef) { }
+  constructor(
+    private chartDataService: ChartDataService,
+    private chartService: ChartService, // Injete o serviço
+    private el: ElementRef
+  ) { }
 
   ngOnInit(): void {
     this.questions = this.chartDataService.getQuestions('2021');
@@ -23,87 +25,17 @@ export class Year2021Component implements OnInit, AfterViewInit {
     this.loadCharts();
   }
 
-  readonly DEFAULT_LABELS: string[] = [
-    "Atende em sua totalidade",
-    "Não atende",
-    "Atende parcialmente"
-  ];
 
+  //funções createPieChart, getPieChartData e getDefaultChartOptions do componente agora no chart service
   loadCharts(): void {
-    this.questions.forEach((question: Question, index: number): void => {
-      this.createPieChart('pizzaChart2021-' + (index + 1), question.labels, question.dataValues, question.colors);
+    this.questions.forEach((question: Question, index: number) => {
+      const canvas = this.el.nativeElement.querySelector(`#pizzaChart2021-${index + 1}`) as HTMLCanvasElement;
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        this.chartService.createPieChart(ctx, question); // Passa o objeto question
+      }
     });
   }
 
-  createPieChart(elementId: string, dataLabels: string[], dataValues: number[], backgroundColors: string[], borderWidth: number = 0): void {
-    const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
-    const total = dataValues.reduce((acc, value) => acc + value, 0);
-    const percentages = dataValues.map(value => ((value / total) * 100).toFixed(2));
 
-    const data = this.getPieChartData(dataLabels, percentages, backgroundColors, borderWidth);
-
-    Chart.register(ChartDataLabels);
-
-    new Chart(ctx, {
-      type: 'pie',
-      data: data,
-      options: this.getDefaultChartOptions()
-    });
-  }
-
-  getPieChartData(labels: string[], percentages: string[], colors: string[], borderWidth: number): any {
-    return {
-      labels: labels,
-      datasets: [{
-        data: percentages,
-        backgroundColor: colors,
-        borderWidth: borderWidth,
-        hoverOffset: 4,
-        datalabels: {
-          labels: percentages.map(percentage => percentage + '%'),
-          anchor: 'end',
-          align: 'start',
-          font: {
-            size: 14,
-          },
-        },
-      }],
-    };
-  }
-
-  getDefaultChartOptions(): any {
-    return {
-      plugins: {
-        legend: {
-          display: true,
-          position: 'bottom',
-          align: 'start', // Alinhar a legenda à esquerda
-          labels: {
-            boxWidth: 20,
-            padding: 10,
-            font: {
-              size: 14,
-            },
-            textAlign: 'left'
-          },
-        },
-        datalabels: {
-          color: 'transparent',
-        },
-      },
-      tooltips: {
-        callbacks: {
-          label: function (tooltipItem: any, data: any) {
-            let dataset = data.datasets[tooltipItem.datasetIndex];
-            let currentValue = dataset.data[tooltipItem.index];
-            return currentValue + '%';
-          },
-        },
-        displayColors: false,
-        bodyFont: {
-          weight: 'bold',
-        },
-      },
-    };
-  }
 }
