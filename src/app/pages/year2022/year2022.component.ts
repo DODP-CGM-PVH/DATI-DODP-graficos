@@ -73,11 +73,17 @@ export class Year2022Component implements OnInit, AfterViewInit {
 
   getDefaultChartOptions(): any {
     return {
+      // As configurações de interação vão aqui, fora dos plugins
+      interaction: {
+        // Habilita a interação no modo 'index'
+        mode: 'index',
+        intersect: false, // Defina como false se você quer que a interação seja ativada mesmo quando o mouse não está diretamente sobre um item do gráfico
+      },
       plugins: {
         legend: {
           display: true,
           position: 'bottom',
-          align: 'start', // Alinhar a legenda à esquerda
+          align: 'start',
           labels: {
             boxWidth: 20,
             padding: 10,
@@ -90,20 +96,33 @@ export class Year2022Component implements OnInit, AfterViewInit {
         datalabels: {
           color: 'transparent',
         },
-      },
-      tooltips: {
-        callbacks: {
-          label: function (tooltipItem: any, data: any) {
-            let dataset = data.datasets[tooltipItem.datasetIndex];
-            let currentValue = dataset.data[tooltipItem.index];
-            return currentValue + '%';
+        tooltip: { // tooltip agora está no singular e dentro dos plugins
+          enabled: true,
+          mode: 'index',
+          intersect: false,
+          callbacks: {
+            label: (tooltipItem: any) => {
+              const dataset = tooltipItem.dataset;
+              const index = tooltipItem.dataIndex;
+              const currentValue = dataset.data[index];
+              const secretaries = this.questions[tooltipItem.datasetIndex].secretaries[index];
+              //const secretariesList = secretaries.join(", ");
+              // Retorna uma matriz de strings, cada uma será uma nova linha no tooltip
+              const lines = secretaries.map(secretary => `${secretary}`);
+              // Adiciona o valor percentual como o primeiro item da matriz
+              lines.unshift(`${currentValue}%`);
+              return lines;
+            },
           },
         },
-        displayColors: false,
-        bodyFont: {
-          weight: 'bold',
-        },
+      },
+      // Configurações do evento de hover
+      onHover: (event: { native: { target: { style: { cursor: string; }; }; }; }, chartElement: any[]) => {
+        // Você pode usar esta função para mudar o cursor, por exemplo
+        event.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default';
       },
     };
   }
+
+
 }

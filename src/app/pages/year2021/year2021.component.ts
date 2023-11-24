@@ -36,15 +36,9 @@ export class Year2021Component implements OnInit, AfterViewInit {
   }
 
   createPieChart(elementId: string, dataLabels: string[], dataValues: number[], backgroundColors: string[], borderWidth: number = 0): void {
-      const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
-      const total = dataValues.reduce((acc, value) => acc + value, 0);
-      const percentages= dataValues.map(value => (
-
-        (value / total) * 100).toFixed(2)
-
-      );
-
-    console.log(percentages)
+    const ctx = this.el.nativeElement.querySelector(`#${elementId}`).getContext('2d');
+    const total = dataValues.reduce((acc, value) => acc + value, 0);
+    const percentages = dataValues.map(value => ((value / total) * 100).toFixed(2));
 
     const data = this.getPieChartData(dataLabels, percentages, backgroundColors, borderWidth);
 
@@ -57,7 +51,7 @@ export class Year2021Component implements OnInit, AfterViewInit {
     });
   }
 
-  getPieChartData(labels: string[], percentages: any[], colors: string[], borderWidth: number): any {
+  getPieChartData(labels: string[], percentages: string[], colors: string[], borderWidth: number): any {
     return {
       labels: labels,
       datasets: [{
@@ -66,6 +60,7 @@ export class Year2021Component implements OnInit, AfterViewInit {
         borderWidth: borderWidth,
         hoverOffset: 4,
         datalabels: {
+          labels: percentages.map(percentage => percentage + '%'),
           anchor: 'end',
           align: 'start',
           font: {
@@ -82,10 +77,14 @@ export class Year2021Component implements OnInit, AfterViewInit {
         legend: {
           display: true,
           position: 'bottom',
+          align: 'start', // Alinhar a legenda à esquerda
           labels: {
+            boxWidth: 20,
+            padding: 10,
             font: {
               size: 14,
             },
+            textAlign: 'left'
           },
         },
         datalabels: {
@@ -97,7 +96,7 @@ export class Year2021Component implements OnInit, AfterViewInit {
           label: function (tooltipItem: any, data: any) {
             let dataset = data.datasets[tooltipItem.datasetIndex];
             let currentValue = dataset.data[tooltipItem.index];
-            return `${currentValue} + %`;
+            return currentValue + '%';
           },
         },
         displayColors: false,
