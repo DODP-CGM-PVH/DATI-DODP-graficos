@@ -1,9 +1,9 @@
 <div class="container mt-5">
-  <div class="row mb-5" *ngFor="let question of questions2021; let i = index">
+  <div class="row mb-5" *ngFor="let combinedQuestion of combinedQuestions; let i = index">
     <!--2021-->
-    <div class="col-md-6">
+    <div class="col-md-6" *ngIf="combinedQuestion.question2021">
       <div class="col-12">
-        <p>{{ questions2021[i].text }}</p>
+        <p>{{ combinedQuestion.question2021.text }}</p>
       </div>
       <div class="col-12 d-flex justify-content-center">
         <canvas [id]="'pizzaChart2021-' + (i + 1)"></canvas>
@@ -11,9 +11,9 @@
     </div>
 
     <!--2022-->
-    <div class="col-md-6">
+    <div class="col-md-6" *ngIf="combinedQuestion.question2022">
       <div class="col-12">
-        <p>{{ questions2022[i].text }}</p>
+        <p>{{ combinedQuestion.question2022.text }}</p>
       </div>
       <div class="col-12 d-flex justify-content-center">
         <canvas [id]="'pizzaChart2022-' + (i + 1)"></canvas>

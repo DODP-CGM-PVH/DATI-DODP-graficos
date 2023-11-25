@@ -13,17 +13,6 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-.header {
-  background: linear-gradient(to right, dodgerblue, yellow);
-  padding: 150px 0;
-  max-height: 350px;
-}
-
-.brasao {
-  width: 25%;
-  max-width: 650px;
-  min-width: 325px;
-}
 
 /* Estilos de Conteúdo */
 p {

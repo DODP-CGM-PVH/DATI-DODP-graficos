@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CompareComponent } from './pages/compare/compare.component';
 import {NgApexchartsModule} from "ng-apexcharts";
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {NgApexchartsModule} from "ng-apexcharts";
     Year2023Component,
     FooterComponent,
     CompareComponent,
+    HeaderComponent,
 
   ],
   imports: [
