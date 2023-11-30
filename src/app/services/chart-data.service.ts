@@ -9,7 +9,7 @@ export class ChartDataService {
     {
       text: '1 - A nomeação para a gerência da Divisão de Controle e Análise Processual da sua Secretaria já está definida e publicada no DOM?',
       dataValues: [16, 1, 1],
-      secretaries: [["secretaria1", "secretaria2", "secretaria3"], ["secretaria4", "secretaria5", "secretaria6"], ["secretaria7", "secretaria8", "secretaria9"]],
+      secretaries: [["SEMDESTUR", "SEMA", "SEMAGRIC", "SEMUR", "PGM", "SEMUSB", "FUNCULTURAL", "SEMTRAN", "SEMES", "SEMESC", "SEMED", "SEMFAZ", "SEMASF", "SEMAD", "SGG", "SEMPOG"], ["SEMUSA"], ["SEMOB"]],
     labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
       colors: ["blue", "red", "yellow"]
     },
@@ -17,23 +17,29 @@ export class ChartDataService {
       text: '2 - O quantitativo de servidores lotados na Divisão de Controle e Análise Processual de sua Secretaria atende à demanda existente?',
       dataValues: [11, 1, 6],
       secretaries: [
-        ["secretaria1", "secretaria2", "secretaria3"],
-        ["secretaria4", "secretaria5", "secretaria6"],
-        ["secretaria7", "secretaria8", "secretaria9"]],
+        ["SEMA", "SEMUR", "PGM", "SEMUSB", "FUNCULTURAL", "SEMESC", "SEMED", "SEMFAZ", "SEMAD", "SGG", "SEMPOG"],
+        ["SEMAGRIC"],
+        ["SEMDESTUR", "SEMUSA", "SEMOB", "SEMTRAN", "SEMES", "SEMASF"]],
       labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
       colors: ["blue", "red", "yellow"]
     },
     {
       text: '3 - O vínculo com o Município, dos servidores lotados na Divisão de Controle e Análise Processual, é preferencialmente efetivo?',
       dataValues: [9, 4, 5],
-      secretaries: [["secretaria1", "secretaria2", "secretaria3"], ["secretaria4", "secretaria5", "secretaria6"], ["secretaria7", "secretaria8", "secretaria9"]],
+      secretaries: [
+      ["SEMUSA", "PGM", "FUNCULTURAL", "SEMES", "SEMED", "SEMFAZ", "SEMAD", "SGG", "SEMPOG"],
+      ["SEMAGRIC", "SEMUR", "SEMUSB", "SEMESC"],
+      ["SEMA", "SEMOB", "SEMTRAN", "SEMASF"]],
     labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
       colors: ["blue", "red", "yellow"]
     },
     {
       text: '4 - Os servidores lotados na Divisão de Controle e Análise Processual são designados especificamente para essa atividade em atendimento ao Princípio da Segregação de Funções?',
       dataValues: [14, 1, 3],
-      secretaries: [["secretaria1", "secretaria2", "secretaria3"], ["secretaria4", "secretaria5", "secretaria6"], ["secretaria7", "secretaria8", "secretaria9"]],
+      secretaries: [
+      ["secretaria1", "secretaria2", "secretaria3"],
+      ["secretaria4", "secretaria5", "secretaria6"],
+      ["secretaria7", "secretaria8", "secretaria9"]],
       labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
       colors: ["blue", "red", "yellow"]
     },
