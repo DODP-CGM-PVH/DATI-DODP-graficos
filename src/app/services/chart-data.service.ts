@@ -540,7 +540,7 @@ labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
       ["secretaria4", "secretaria5", "secretaria6"],
       ["secretaria7", "secretaria8", "secretaria9"]],
 labels: ["Atende em sua totalidade", "Atende parcialmente"],
-      colors: ["blue", "yellow"]
+      colors: ["blue", "red", "yellow"]
     },
     {
       text: '4 - Os servidores lotados na Divisão de Controle e Análise Processual são designados especificamente para essa atividade em atendimento ao Princípio da Segregação de Funções?',
