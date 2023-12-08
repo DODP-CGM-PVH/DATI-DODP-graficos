@@ -26,3 +26,7 @@
 .navbar-brand {
   margin-left: 10px;
 }
+
+*{
+  font-weight: bold;
+}
