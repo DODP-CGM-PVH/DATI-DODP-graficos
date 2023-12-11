@@ -30,3 +30,7 @@
 *{
   font-weight: bold;
 }
+
+.navbar-nav.mr-auto {
+  padding-left: 15px;
+}
