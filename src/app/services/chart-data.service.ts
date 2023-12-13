@@ -949,20 +949,99 @@ labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente",
       colors: ["blue", "red", "yellow", "green"]
     },
   ];
-  
+
   private readonly questions2023: Question[] = [
     {
-      text: '1 - A nomeação e Análise Processual?',
-      dataValues: [16, 1, 1],
-      secretaries: [["secretaria1", "secretaria2", "secretaria3"], ["secretaria4", "secretaria5", "secretaria6"], ["secretaria7", "secretaria8", "secretaria9"]],
-labels: [
-        "Atende em sua totalidade",
-        "Não atende",
-        "Atende parcialmente"
-      ],
-      colors: ['red', 'blue', 'yellow']
+      text: '1. No Regimento Interno dessa Secretaria, as atribuições inerentes a área operacional da Divisão de Controle e Análise Processual estão previstas nas exigências dispostas no art. 10 da Lei Complementar nº 767/2019?',
+      dataValues: [13, 2, 6, 1],
+      secretaries: [["SEMA", "SEMAGRIC", "SEMASF", "SEMDESTUR", "SEMES", "SEMESC", "SEMFAZ", "SEMPOG", "SGG", "SMC", "SMD", "SMTI", "SEMUSB"],["FUNCULTURAL", "SEMTRAN"],["SEMAD", "SEMED", "SEMOB", "SEMUR", "SEMUSA", "SGP"],["PGM"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "NÃO HÁ REGIMENTO INTERNO"],
+      colors: ["blue", "red", "yellow", "green"]
     },
-    // ... Adicione todas as 53 perguntas aqui
+    {
+      text: '2. O servidor nomeado na Unidade Executora como Gerente da Divisão de Controle e Análise Processual tem experiência na área de controle interno?',
+      dataValues: [14, 1, 6, 1],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMAD", "SEMAGRIC", "SEMED", "SEMES", "SEMESC", "SEMFAZ", "SEMPOG", "SEMUR", "SEMUSA", "SGG", "SMC", "SMTI"],["SEMDESTUR"],["SEMASF", "SEMOB", "SEMTRAN", "SGP", "SMD", "SEMUSB"],["PGM"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "NÃO POSSUI EXPERIÊNCIA"],
+      colors: ["blue", "red", "yellow", "green"]
+    },
+    {
+      text: '3. São oferecidos treinamentos aos servidores lotados na Unidade Executora de Controle Interno - Divisão de Controle e Análise Processual que atendam às necessidades para o desempenho das funções afetas ao controle interno?',
+      dataValues: [7, 3, 12],
+      secretaries: [["SEMA", "SEMAD", "SEMES", "SEMESC", "SEMFAZ", "SEMUR", "SGG"],["SEMTRAN", "SGP", "SMTI"],["FUNCULTURAL", "SEMAGRIC", "SEMASF", "SEMDESTUR", "SEMED", "SEMOB", "SEMPOG", "SEMUSA", "SMC", "SMD", "PGM", "SEMUSB"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
+      colors: ["blue", "red", "yellow"]
+    },
+    {
+      text: '4. Os servidores lotados na Divisão de Controle e Análise Processual possuem expertise suficiente para o desempenho das atribuições previstas no art. 10 da Lei Complementar nº 767/2019?',
+      dataValues: [13, 8, 1],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMAD", "SEMAGRIC", "SEMED", "SEMES", "SEMESC", "SEMFAZ", "SEMPOG", "SGG", "SMC", "SMD", "SMTI"],["SEMASF", "SEMDESTUR", "SEMOB", "SEMTRAN", "SEMUR", "SEMUSA", "SGP", "SEMUSB"],["PGM"]],
+labels: ["Atende em sua totalidade", "Atende parcialmente", "A PRIMEIRA EXPERIÊNCIA DA SERVIDORA"],
+      colors: ["blue", "yellow", "green"]
+    },
+    {
+      text: '5. A estrutura física da Divisão de Controle e Análise Processual possui os recursos e acessos necessários para o desempenho de suas funções (espaço, climatização, mobiliário, computadores e sistemas informatizados)?',
+      dataValues: [16, 5, 1],
+      secretaries: [["FUNCULTURAL", "SEMAD", "SEMDESTUR", "SEMED", "SEMES", "SEMESC", "SEMFAZ", "SEMOB", "SEMPOG", "SEMTRAN", "SGG", "SGP", "SMC", "SMTI", "PGM", "SEMUSB"],["SEMAGRIC", "SEMASF", "SEMUR", "SEMUSA", "SMD"],["SEMA"]],
+labels: ["Atende em sua totalidade", "Atende parcialmente", "Localizada dentro Departamento Administrativo"],
+      colors: ["blue", "yellow", "green"]
+    },
+    {
+      text: '6. Os servidores lotados na Divisão de Controle e Análise Processual compreendem a importância, para o exercício das atribuições do cargo, do conteúdo do Código de Ética Municipal (Decreto nº 18.270/2022) e do Estatuto do Servidor (Lei Complementar nº 385/2010)?',
+      dataValues: [21, 1,],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMAD", "SEMAGRIC", "SEMED", "SEMES", "SEMESC", "SEMFAZ", "SEMPOG", "SEMUR", "SEMUSA", "SGG", "SMC", "SMTI", "SEMASF", "SEMOB", "SEMTRAN", "SGP", "SMD", "SEMUSB", "PGM"],["SEMDESTUR"]],
+labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue","yellow"]
+    },
+    {
+      text: '7. A Divisão de Controle e Análise Processual desenvolve um plano de ação que estrutura as tarefas a serem realizadas ao longo de um período, criando assim uma rotina para os colaboradores e permitindo a consecução de seus objetivos.',
+      dataValues: [13, 2, 6, 1],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMAD", "SEMAGRIC", "SEMDESTUR", "SEMED", "SEMES", "SEMPOG", "SEMUSA", "SGG", "SMC", "SMD", "SMTI"],["SEMTRAN", "SEMUSB"],["SEMASF", "SEMFAZ", "SEMOB", "SEMUR", "SGP", "PGM"],["SEMESC"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "As ações da SEMESC são acompanhadas conforme a Lei \nOrçamentária Anual (LOA. As atividades referente aos convênios \nsão coordenadas e acompanhadas conforme planilhas \nde ações. A maioria das demandas referente a obras são espontânea, \nem razão das necessidades de proposta de reforma e construções \nadvindas das outras secretarias."],
+      colors: ["blue", "red", "yellow", "green"]
+    },
+    {
+      text: '8. Os servidores lotados na Divisão de Controle e Análise Processual compreendem a instituição da política de gestão de riscos dos órgãos e entidades do Poder Executivo Municipal e de suas diretrizes (Art. 14 do Decreto nº 17.888/2022)?',
+      dataValues: [13, 9],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMAD", "SEMASF", "SEMED", "SEMES", "SEMESC", "SEMPOG", "SEMUR", "SGG", "SMC", "SMD", "SMTI"],["SEMAGRIC", "SEMDESTUR", "SEMFAZ", "SEMOB", "SEMTRAN", "SEMUSA", "SGP", "PGM", "SEMUSB"]],
+labels: ["Atende em sua totalidade", "Atende parcialmente"],
+      colors: ["blue", "yellow"]
+    },
+    {
+      text: '9. Os servidores lotados na Divisão de Controle e Análise Processual recebem treinamentos voltados ao tema de gestão de riscos, a exemplo dos cursos gratuitos da ENAP Virtual (www.escolavirtual.gov.br)?',
+      dataValues: [6, 6, 10],
+      secretaries: [["SEMAD", "SEMASF", "SEMES", "SEMESC", "SEMPOG", "SGG"],["FUNCULTURAL", "SEMDESTUR", "SEMOB", "SGP", "SMTI", "SEMUSB"],["SEMA", "SEMAGRIC", "SEMED", "SEMFAZ", "SEMTRAN", "SEMUR", "SEMUSA", "SMC", "SMD", "PGM"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
+      colors: ["blue", "red", "yellow"]
+    },
+    {
+      text: '10. A Divisão de Controle e Análise Processual supervisiona a execução de suas atribuições por meio do acompanhamento do plano de ação?',
+      dataValues: [8, 5, 8, 1],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMASF", "SEMES", "SEMPOG", "SGG", "SMD", "SMTI"],["SEMAD", "SEMAGRIC", "SEMDESTUR", "SEMTRAN", "PGM"],["SEMED", "SEMFAZ", "SEMOB", "SEMUR", "SEMUSA", "SGP", "SMC", "SEMUSB"],["SEMESC"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente", "A Divisão de Controle e Análise Processual faz o acompanhamento \ndo plano orçamentário LOA, referente aos desdobramentos \ne a capacidade de gasto desta unidade orçamentária, a previsão \nde convênios e operações de crédito, além da orientação \npolítica estratégica."],
+      colors: ["blue", "red", "yellow", "green"]
+    },
+    {
+      text: '11. Os servidores lotados na Divisão de Controle e Análise Processual cumprem suas responsabilidades em conformidade às atribuições normatizadas no art. 10 da Lei Complementar nº 767/2019 e ao Princípio da Segregação de Funções?',
+      dataValues: [17, 1, 4],
+      secretaries: [["FUNCULTURAL", "SEMAD", "SEMAGRIC", "SEMASF", "SEMED", "SEMES", "SEMESC", "SEMPOG", "SEMUR", "SEMUSA", "SGG", "SGP", "SMC", "SMD", "SMTI", "PGM", "SEMUSB"],["SEMDESTUR"],["SEMA", "SEMFAZ", "SEMOB", "SEMTRAN"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
+      colors: ["blue", "red", "yellow"]
+    },
+    {
+      text: '12. A Divisão de Controle e Análise Processual promove a divulgação periódica de seus trabalhos realizados para dar suporte aos processos de tomada de decisão?',
+      dataValues: [9, 6, 7],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMAGRIC", "SEMASF", "SEMES", "SEMPOG", "SGG", "SMC", "SMD"],["SEMDESTUR", "SEMESC", "SEMTRAN", "SMTI", "PGM", "SEMUSB"],["SEMAD", "SEMED", "SEMFAZ", "SEMOB", "SEMUR", "SEMUSA", "SGP"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
+      colors: ["blue", "red", "yellow"]
+    },
+    {
+      text: '13. A Divisão de Controle e Análise Processual utiliza de maneira eficaz os recursos disponíveis para investigar indícios de irregularidades e promover a responsabilização, incluindo a comunicação à autoridade superior, utilização de canais de Ouvidoria, entre outros?',
+      dataValues: [13, 1, 8],
+      secretaries: [["FUNCULTURAL", "SEMA", "SEMAGRIC", "SEMASF", "SEMES", "SEMPOG", "SGG", "SGP", "SMC", "SMD", "SMTI", "PGM", "SEMUSB"],["SEMTRAN"],["SEMAD", "SEMDESTUR", "SEMED", "SEMESC", "SEMFAZ", "SEMOB", "SEMUR", "SEMUSA"]],
+labels: ["Atende em sua totalidade", "Não atende", "Atende parcialmente"],
+      colors: ["blue", "red", "yellow"]
+    },
   ];
 
   constructor() { }
